@@ -43,6 +43,7 @@ if IS_POSTGRES:
         return PostgresConnection()
     
     # Monkey patch!
+    import sqlite3
     sqlite3.connect = postgres_connect
     
     print("[database_patch] ✅ Using Postgres (Supabase)")
