@@ -4,23 +4,44 @@
     {
       "src": "api/server.py",
       "use": "@vercel/python"
+    },
+    {
+      "src": "web/**",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
     {
-      "src": "/api/(.*)",
-      "dest": "api/server.py"
+      "src": "/style.css",
+      "dest": "/web/style.css"
     },
     {
-      "src": "/(.*\\.(css|js|html|png|jpg|jpeg|gif|svg|ico))",
-      "dest": "/web/$1"
+      "src": "/enhancements.css",
+      "dest": "/web/enhancements.css"
+    },
+    {
+      "src": "/app.js",
+      "dest": "/web/app.js"
+    },
+    {
+      "src": "/login.html",
+      "dest": "/web/login.html"
+    },
+    {
+      "src": "/landing.html",
+      "dest": "/web/landing.html"
+    },
+    {
+      "src": "/index.html",
+      "dest": "/web/index.html"
+    },
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/server.py"
     },
     {
       "src": "/(.*)",
-      "dest": "api/server.py"
+      "dest": "/api/server.py"
     }
-  ],
-  "env": {
-    "FLASK_ENV": "production"
-  }
+  ]
 }
