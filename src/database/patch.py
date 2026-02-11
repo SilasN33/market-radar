@@ -12,6 +12,9 @@ class PostgreSQLAdapter:
     def commit(self):
         self.conn.commit()
 
+    def rollback(self):
+        self.conn.rollback()
+
     def close(self):
         self.conn.close()
 
@@ -32,9 +35,16 @@ class PostgreSQLCursor:
         # Translate SQLite-specific syntax to PostgreSQL
         sql = sql.replace("INTEGER PRIMARY KEY AUTOINCREMENT", "SERIAL PRIMARY KEY")
         sql = sql.replace("DATETIME DEFAULT CURRENT_TIMESTAMP", "TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
+        # Generic fallback for bare DATETIME types (common in ADD COLUMN)
+        # Note: We create a simplistic regex or just replace " DATETIME" -> " TIMESTAMP"
+        # Be careful not to break strings, but for this simple schema it's fine.
+        if " DATETIME" in sql:
+            sql = sql.replace(" DATETIME", " TIMESTAMP")
+            
         sql = sql.replace("?","%s")
-        sql = sql.replace("INSERT OR IGNORE", "INSERT") # Rough approx, usually needs ON CONFLICT DO NOTHING
-        sql = sql.replace("RETURNING id", "RETURNING id") # Valid in both (modern sqlite)
+        sql = sql.replace("INSERT OR IGNORE", "INSERT") # Rough approx
+        sql = sql.replace("RETURNING id", "RETURNING id") 
+
         
         # Handle "ON CONFLICT" syntax (SQLite is similar to Postgres, but not identical)
         # We rely on psycopg2 to handle %s parameter binding
