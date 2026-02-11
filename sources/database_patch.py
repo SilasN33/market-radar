@@ -19,7 +19,6 @@ IS_POSTGRES = DATABASE_URL and 'postgres' in DATABASE_URL
 if IS_POSTGRES:
     # We're in production, use Postgres
     import psycopg2
-    from psycopg2.extras import RealDictCursor
     import sqlite3
     
     # Parse DATABASE_URL to handle special characters correctly
@@ -52,6 +51,7 @@ if IS_POSTGRES:
         """Wrapper around psycopg2 cursor that converts SQLite syntax to PostgreSQL"""
         def __init__(self, cursor):
             self._cursor = cursor
+            self._last_description = None
             
         def _convert_query(self, query):
             """Convert SQLite syntax to PostgreSQL syntax"""
@@ -78,27 +78,68 @@ if IS_POSTGRES:
                 # We'll keep TEXT as it's more flexible and works fine in PostgreSQL
             
             return query
+        
+        def _make_row(self, values):
+            """Convert tuple to a SQLite-compatible Row object"""
+            if values is None or self._cursor.description is None:
+                return values
+            
+            # Create a dict-like object that also supports index access
+            class PostgresRow:
+                def __init__(self, values, description):
+                    self._values = values
+                    self._description = description
+                    # Create mapping of column names to values
+                    self._mapping = {desc[0]: val for desc, val in zip(description, values)}
+                
+                def __getitem__(self, key):
+                    if isinstance(key, int):
+                        return self._values[key]
+                    return self._mapping[key]
+                
+                def __iter__(self):
+                    return iter(self._values)
+                
+                def keys(self):
+                    return [desc[0] for desc in self._description]
+                
+                def values(self):
+                    return list(self._values)
+                
+                def items(self):
+                    return self._mapping.items()
+                
+                def __len__(self):
+                    return len(self._values)
+            
+            return PostgresRow(values, self._cursor.description)
             
         def execute(self, query, params=None):
             # Convert SQLite syntax to PostgreSQL
             query = self._convert_query(query)
-            return self._cursor.execute(query, params)
+            result = self._cursor.execute(query, params)
+            self._last_description = self._cursor.description
+            return result
         
         def executemany(self, query, params_seq):
             query = self._convert_query(query)
             return self._cursor.executemany(query, params_seq)
         
         def fetchone(self):
-            return self._cursor.fetchone()
+            row = self._cursor.fetchone()
+            return self._make_row(row) if row else None
         
         def fetchall(self):
-            return self._cursor.fetchall()
+            rows = self._cursor.fetchall()
+            return [self._make_row(row) for row in rows]
         
         def fetchmany(self, size=None):
-            return self._cursor.fetchmany(size)
+            rows = self._cursor.fetchmany(size)
+            return [self._make_row(row) for row in rows]
         
         def __iter__(self):
-            return iter(self._cursor)
+            for row in self._cursor:
+                yield self._make_row(row)
         
         def __getattr__(self, name):
             # Proxy all other attributes to the underlying cursor
@@ -117,8 +158,9 @@ if IS_POSTGRES:
                 raise
             
         def cursor(self):
-            # Return wrapped cursor that converts ? to %s
-            pg_cursor = self.conn.cursor(cursor_factory=RealDictCursor)
+            # Return wrapped cursor that converts SQLite syntax to PostgreSQL
+            # Use regular cursor (not RealDictCursor) for better compatibility
+            pg_cursor = self.conn.cursor()
             return PostgresCursor(pg_cursor)
         
         def commit(self):
