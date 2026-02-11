@@ -17,11 +17,12 @@ class PostgreSQLAdapter:
 
     @property
     def row_factory(self):
-        return self.conn.row_factory
+        return getattr(self, "_row_factory", None)
 
     @row_factory.setter
     def row_factory(self, value):
-        self.conn.row_factory = value
+        self._row_factory = value
+
 
 class PostgreSQLCursor:
     def __init__(self, cursor):
@@ -65,6 +66,7 @@ if os.environ.get("DATABASE_URL") and "postgres" in os.environ.get("DATABASE_URL
     print("[database] 🐘 Detected PostgreSQL environment. Patching sqlite3...")
     try:
         import psycopg2
+        import psycopg2.extras
         import urllib.parse as urlparse
 
         def connect(db_path, **kwargs):
@@ -80,7 +82,8 @@ if os.environ.get("DATABASE_URL") and "postgres" in os.environ.get("DATABASE_URL
                 user=user,
                 password=password,
                 host=host,
-                port=port
+                port=port,
+                cursor_factory=psycopg2.extras.RealDictCursor
             )
             return PostgreSQLAdapter(conn)
 
