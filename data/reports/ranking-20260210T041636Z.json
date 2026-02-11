@@ -1,0 +1,342 @@
+[
+  {
+    "keyword": "smartphone",
+    "score": 0.712,
+    "signals": {
+      "volume": 1.0,
+      "quality": 0.96,
+      "logistics": 0.5,
+      "momentum": 0.3,
+      "saturation": 0.4
+    },
+    "meta": {
+      "marketplace": "Amazon BR",
+      "price": "R$ 1230.00",
+      "rating": "4.7/5",
+      "prime": "Não",
+      "url": "https://www.amazon.com.br/Smartphone-Xiaomi-Redmi-Midnight-Black/dp/B0DT5LHPMX/ref=sr_1_8?dib=eyJ2IjoiMSJ9.hzycHCgWDeGO4_Tj0l0ECWVxfHnHiSbg046UlwvpNGcNUaGVJ7c8UL6x0x3FMJZANb-QdETYW-99GcYPp-Yx-34M5jBWnC1wy8Y6OUk-NibujR5wmU1QmXT2mkziHPXeFw26IdguCJLMZuj-AJgBCpe1Hmy4Gwgc0lXVFOUoe3IKrGPO72mTqhyDzGeUAA_4-FRytFCBkLkTaZdvLv8tPH598bQ2CcVgdgl1fmhx7v9BQifzMs0EiB9-oi5OyYTyHCWHze9bHTOpQY-DwuuwpLVCemSblXguEjrv9R9HS78.gaJq6Tg95NgfzV3KFQWWn_eh48Mo8xt4MBKYXnJkQWQ&dib_tag=se&keywords=smartphone&qid=1770696974&sr=8-8",
+      "thumbnail": "https://m.media-amazon.com/images/I/61+k2EbgHLL._AC_UL320_.jpg",
+      "title": "Sem título"
+    }
+  },
+  {
+    "keyword": "kit de primeiros socorros",
+    "score": 0.704,
+    "signals": {
+      "volume": 1.0,
+      "quality": 0.9199999999999999,
+      "logistics": 0.5,
+      "momentum": 0.3,
+      "saturation": 0.4
+    },
+    "meta": {
+      "marketplace": "Amazon BR",
+      "price": "R$ 242.00",
+      "rating": "4.6/5",
+      "prime": "Não",
+      "url": "https://www.amazon.com.br/Primeiros-Socorros-Torniquete-Bandagens-Suprimentos/dp/B0DDWMPM22/ref=sr_1_8?dib=eyJ2IjoiMSJ9.Qo-1zjsPvjjV5cZz2CvsHi2PwaLwU2wBqFJzz_w4-C-9G9Ts6jSNADu3xxYTkEDs-htHkfmouVsbpIiLqYdvcTl90sSqiMvrz-p1DFdYYtvUSXW4hBKWn1Ka0YOIFWzbpSxuJCmXyqPkbFSSsSX6S8P3EpZRFaOJOn0RxrcpAObe45Q6YRl18oXumgYQKafDVSorIPwV_ZJkkDQhUa9epI5dIYTcXNJzBOKr8d6jFFbuBjEXKTYyLT64e74GKFrbS3kw4uSP5BIi3mwVmYG6q308rWc-6VSwjqzqLDRNs84.2Dlizpl7AkOpLskUi_IPY5Y-KWy0adGE75R8yfTzJcQ&dib_tag=se&keywords=kit+de+primeiros+socorros&qid=1770696993&sr=8-8&ufe=app_do%3Aamzn1.fos.fcd6d665-32ba-4479-9f21-b774e276a678",
+      "thumbnail": "https://m.media-amazon.com/images/I/61aTDqWfN+L._AC_UL320_.jpg",
+      "title": "Sem título"
+    }
+  },
+  {
+    "keyword": "Duas pessoas são socorridas após choque elétrico durante alagamento em Copacabana - G1",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Indicados por Alcolumbre, alvos da PF forçaram aporte da Amprev no Master - Revista Oeste",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Lula posa com prefeitos do PL e brinca: Valdemar vai bater neles - CNN Brasil",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Esposa de Maderite relata o que aconteceu na tarde em que influencer morreu - Estado de Minas",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Polícia de SC confirma mais um cão caramelo na lista de maus-tratos na Praia Brava - portalleodias.com",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Câmara aprova tramitação em urgência para projeto que quebra patente do Mounjaro - Folha de S.Paulo",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Justiça determina paralisação de atividades em mina da Vale em Ouro Preto - Estado de Minas",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Não sou doido, diz Lula sobre “brigar” com Trump - Poder360",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Crusoé: \"Lula já não consegue mais esconder os espasmos autoritários\" - oantagonista.com.br",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Calor, frente fria, chuva forte e temporais: veja como fica o tempo no Carnaval - MetSul Meteorologia",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Ucranianos enfrentam frio rigoroso após ataques russos à infraestrutura - CNN Brasil",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "México confirma que não enviará mais petróleo a Cuba - Valor Econômico",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Israel assume poderes na Cisjordânia e permite compra de terras por colonos - UOL Notícias",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Vítimas de Jeffrey Epstein exibem anúncio durante intervalo do Super Bowl e cobram liberação total de arquivos; vídeos - O Globo",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Diretor jurídico do BRB renuncia em meio a investigações do caso Master - UOL Economia",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Ibovespa dispara mais de 1%, com impulso do exterior; Vale ganha quase 2% - InfoMoney",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Exclusivo: Governo vai propor em consulta pública IOF de 3,5% sobre ativos virtuais - Valor Econômico",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Mancha que causou megaexplosões no Sol formou ponto de interrogação deitado - CNN Brasil",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Sonda da China faz descoberta intrigante no lado oculto da Lua - CNN Brasil",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Marvel's Wolverine tem possível data de lançamento vazada pela PlayStation Store - GameVicio",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  }
+]

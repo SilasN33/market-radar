@@ -1,0 +1,402 @@
+[
+  {
+    "keyword": "purificador de água",
+    "score": 0.708,
+    "signals": {
+      "volume": 1.0,
+      "quality": 0.9400000000000001,
+      "logistics": 0.5,
+      "momentum": 0.3,
+      "saturation": 0.4
+    },
+    "meta": {
+      "marketplace": "Amazon BR",
+      "price": "R$ 497.00",
+      "rating": "4.6/5",
+      "prime": "Não",
+      "url": "https://www.amazon.com.br/Purificador-%C3%81gua-Consul-CPB34ASVNA-Branco/dp/B0778WNQPX/ref=sr_1_8?dib=eyJ2IjoiMSJ9.sJ_0RImALi6lFM5XyHDxvlz8vSWS1cVFSc2VTdM2MGnBogSzqRmgqR8u5pOhuFKYS8QkkE85ckQPK2CREfAY_hOQY7jlh7MgSYrsGDejVLgaJGl9ukzGKkWzlPzUjNxPhkBP8EA2SneFygFmHQ6wzoBGzyapiql0WHJOeY5bMdQc_nl7sLjiy_o76UERjMrlye0QHXrdq_tTRk15cM688NU_eKHPnp1zmyGfbodOF5VmRL6DG8oi21j2XimDNpqbn2PGZ-HPGXR2vDxIALqK2ttw-Qb8BdgBvl4x9_Fg9Sg.iZQqd7KoTJ4_26Tv55Pq82VQXYd1ud6QjvLoAEQAc5E&dib_tag=se&keywords=purificador+de+agua&qid=1770696517&sr=8-8&ufe=app_do%3Aamzn1.fos.4bddec23-2dcf-4403-8597-e1a02442043d",
+      "thumbnail": "https://m.media-amazon.com/images/I/51kvaHioTKS._AC_UL320_.jpg",
+      "title": "Sem título"
+    }
+  },
+  {
+    "keyword": "fone bluetooth",
+    "score": 0.658,
+    "signals": {
+      "volume": 0.858,
+      "quality": 0.9400000000000001,
+      "logistics": 0.5,
+      "momentum": 0.3,
+      "saturation": 0.4
+    },
+    "meta": {
+      "marketplace": "Amazon BR",
+      "price": "R$ 251.00",
+      "rating": "4.6/5",
+      "prime": "Não",
+      "url": "https://www.amazon.com.br/Ouvido-JBL-Bluetooth-Auricular-Resistente/dp/B0DHL63KWK/ref=sr_1_8?dib=eyJ2IjoiMSJ9.A0Ue0h7FMBDqV-3hk1nfTb7o0pg9yq9hQ463UO_Zu6iJKLajslnFR68UNHfn46J3Pxe1VMeyMF18UV5abHVu9EnR8yq8neT3TRotGXYu15zCOVwneWECrc8GbtGBhWSED0pAu6IOfvwSDRNsGUaww67J5i6WJwEkuZn3s4i89nAUkbn0ia0b8mIdhK_9ztmfdXzOoB-q4MWCTk_qfcQUEuoiM6wyVCJjWg9XSZAALUUC-bNFHqgNFdWj0FRn1o9dAtH-PSBH2FPJryoqFBzvFm5zx4wVgkw0YNHL3FO-MgM.P2ruxR3wgez92GnJ1rigsjdkdJlVIBhDjC14FWW_EhQ&dib_tag=se&keywords=fone+bluetooth&qid=1770696505&sr=8-8",
+      "thumbnail": "https://m.media-amazon.com/images/I/414+kOLlS5L._AC_UL320_.jpg",
+      "title": "Sem título"
+    }
+  },
+  {
+    "keyword": "mochila resistente à água",
+    "score": 0.617,
+    "signals": {
+      "volume": 0.718,
+      "quality": 0.9800000000000001,
+      "logistics": 0.5,
+      "momentum": 0.3,
+      "saturation": 0.4
+    },
+    "meta": {
+      "marketplace": "Amazon BR",
+      "price": "R$ 69.00",
+      "rating": "4.7/5",
+      "prime": "Não",
+      "url": "https://www.amazon.com.br/Masculina-Feminina-Imperme%C3%A1vel-Refor%C3%A7ada-Resistente/dp/B0FG5P425Z/ref=sr_1_8?dib=eyJ2IjoiMSJ9.54dDoRVL3zn5Ev0FnYLH306pOW9RzVCLBvecMEasQPGfC2Xy5KT3bhbrbeGf1eAyWiB7d-tbJqsuBThlejf2m6cb8p1SFn4uncFc8l5KVmchmYjbQxrMJshXbdLFNePJLEnpe5arc1TdJXq5fMu1qDx70Cy4UQk6hudHv63OdABRGf3tj7xeV_VA3ORYGKmuJaMwhIQzcxUCo75-_A0cY6XJYuVO8ZRakQ3F8rfEjIcVivETJ9zP4uT7s-xaTO4rTooqVvdA9xbmWn6xMEPibRUi3-Gg3fRV8-m7VIuxI2A.iVRXVjyI5uEhITHjh5DJDITlTDJ06hBjtOGBXmf71wE&dib_tag=se&keywords=mochila+resistente+%C3%A0+%C3%A1gua&qid=1770696524&sr=8-8&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9",
+      "thumbnail": "https://m.media-amazon.com/images/I/61XbekLFB9L._AC_UL320_.jpg",
+      "title": "Sem título"
+    }
+  },
+  {
+    "keyword": "tênis esportivo",
+    "score": 0.509,
+    "signals": {
+      "volume": 0.398,
+      "quality": 1.0,
+      "logistics": 0.5,
+      "momentum": 0.3,
+      "saturation": 0.4
+    },
+    "meta": {
+      "marketplace": "Amazon BR",
+      "price": "R$ 99.00",
+      "rating": "4.3/5",
+      "prime": "Não",
+      "url": "https://www.amazon.com.br/Masculino-Esportivo-Academia-Caminhada-Num%C3%A9rico/dp/B0G7JB6388/ref=sr_1_8?dib=eyJ2IjoiMSJ9.Hb-Meg95zEZuQUekDYdN5dA0bwuwd8uWiY3qpNpv6HOys_IEuPPBQooSjYZIZK6ok80D53bT_1CafRMmzYfue6j_4QlsCN-UzNoNS0J05SbGINhL-xiP7FWSrpbfJC72PsF8ewZuSgOvc2Vo_zi4pLZCaEYFtEbYoN8nBnK8PoLZSc0DwkOS87EaCe-6T9ANSeYWBFni6nj2kpFqT1LmfGODt21fiQmeHpVTCUyl_Pj_8Yks4lrVYZ3vhoyL3k8Xfn416G4r2-dkRdEMGCCKA1O7m6GK9hVxe6NWr2IHuiE.g3uB28Xgc2Xdq0FZEBNbz_nxVlWJwCHfvvA0dKNqsfI&dib_tag=se&keywords=tenis+esportivo&qid=1770696520&sr=8-8&ufe=app_do%3Aamzn1.fos.6121c6c4-c969-43ae-92f7-cc248fc6181d",
+      "thumbnail": "https://m.media-amazon.com/images/I/61cs4KHMILL._AC_UL320_.jpg",
+      "title": "Sem título"
+    }
+  },
+  {
+    "keyword": "cabo de carregamento",
+    "score": 0.483,
+    "signals": {
+      "volume": 0.322,
+      "quality": 1.0,
+      "logistics": 0.5,
+      "momentum": 0.3,
+      "saturation": 0.4
+    },
+    "meta": {
+      "marketplace": "Amazon BR",
+      "price": "R$ 14.00",
+      "rating": "4.5/5",
+      "prime": "Não",
+      "url": "https://www.amazon.com.br/Refor%C3%A7ado-Notebook-Qualidade-Carregamento-Transfer%C3%AAncia/dp/B0FPGPKYD4/ref=sr_1_8?dib=eyJ2IjoiMSJ9.Swtee3iogFtQ1vRjIcX7iPAcLc2XhdqdsULp7Jagv0XdRG2LRC3qPImOLvNZRmNUTYEEIIvcRfBOyswTWgowD7C9gF10Nft_yuuqaz07F7Tm4JvEgTFP9iFIX-lnTD4tDG9d3pIrL8sIZhIk90WWjaub7WscxoZ_iUKeUIgjPIe_lzZeE4hPN7gQ4UE5bES8wvFsRgmVBJ1AKI0CZ5H5fDpC6ixRATcz9lfcd80kPTYjlYw745gO8_UZOSo5l7TgQiLrBh2Vaw6m4wDmdzINLHeXN8Ne3W1ZlC1Ey21ZNqA.YENJh3IlK17j-WWTQQxdNsBdNmBkjGyuFeukkrrx-oE&dib_tag=se&keywords=cabo+de+carregamento&qid=1770696511&sr=8-8",
+      "thumbnail": "https://m.media-amazon.com/images/I/41mVhWhFJ1L._AC_UL320_.jpg",
+      "title": "Sem título"
+    }
+  },
+  {
+    "keyword": "Duas pessoas são socorridas após choque elétrico durante alagamento em Copacabana - G1",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Indicados por Alcolumbre, alvos da PF forçaram aporte da Amprev no Master - Revista Oeste",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Por que Cuba reduziu jornada de trabalho para quatro dias por semana? - UOL Notícias",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Esposa de Maderite relata o que aconteceu na tarde em que influencer morreu - Estado de Minas",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Polícia de SC confirma mais um cão caramelo na lista de maus-tratos na Praia Brava - portalleodias.com",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Câmara aprova tramitação em urgência para projeto que quebra patente do Mounjaro - Folha de S.Paulo",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Justiça determina paralisação de atividades em mina da Vale em Ouro Preto - Estado de Minas",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Não sou doido, diz Lula sobre “brigar” com Trump - Poder360",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Crusoé: \"Lula já não consegue mais esconder os espasmos autoritários\" - oantagonista.com.br",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Hugo Motta encaminha PEC do fim da escala 6x1 à CCJ - Correio Braziliense",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Ucranianos enfrentam frio rigoroso após ataques russos à infraestrutura - CNN Brasil",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "México confirma que não enviará mais petróleo a Cuba - Valor Econômico",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Israel assume poderes na Cisjordânia e permite compra de terras por colonos - UOL Notícias",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Vítimas de Jeffrey Epstein exibem anúncio durante intervalo do Super Bowl e cobram liberação total de arquivos; vídeos - O Globo",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Diretor jurídico do BRB renuncia em meio a investigações do caso Master - UOL Economia",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Ibovespa dispara mais de 1%, com impulso do exterior; Vale ganha quase 2% - InfoMoney",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Exclusivo: Governo vai propor em consulta pública IOF de 3,5% sobre ativos virtuais - Valor Econômico",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Mancha que causou megaexplosões no Sol formou ponto de interrogação deitado - CNN Brasil",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Sonda da China faz descoberta intrigante no lado oculto da Lua - CNN Brasil",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Marvel's Wolverine tem possível data de lançamento vazada pela PlayStation Store - GameVicio",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  }
+]

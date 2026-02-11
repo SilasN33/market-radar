@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-02-11T00:08:51.387258+00:00",
+  "source": "mercadolivre_trends",
+  "keywords": [],
+  "count": 0,
+  "metadata": {
+    "categories": {
+      "electronics": "MLB5672",
+      "home": "MLB1574",
+      "beauty": "MLB1246",
+      "sports": "MLB1276",
+      "toys": "MLB1132",
+      "fashion": "MLB1430"
+    },
+    "per_category": 5
+  }
+}

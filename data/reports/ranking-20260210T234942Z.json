@@ -1,0 +1,414 @@
+[
+  {
+    "keyword": "notebook",
+    "score": 0.732,
+    "signals": {
+      "volume": 1.0,
+      "logistics": 0.7,
+      "quality": 0.96,
+      "momentum": 0.3,
+      "saturation": 0.4
+    },
+    "meta": {
+      "marketplace": "Amazon BR",
+      "price": "R$ 1739.00",
+      "url": "https://www.amazon.com.br/Notebook-ASUS-Vivobook-Intel-Celeron/dp/B0DD64K4MP/ref=sr_1_8?dib=eyJ2IjoiMSJ9.xT4IT1Wquv9Hb5tVbsHMJfsLw1fQNABIxKbIo8yTYCiKolatM7Vbr6W1GvFXGQsKp8maky4QQ3O7_1COFx0G1VNEcwAq0eYXzhdXScxxVo5RIS7SXK3WG-rr3dbVbCXg0xpmhw4rYU2xldetBWmw3bC6qJ9c4nKvHKC5pPBX_9BvgWKHC8hUKUO7mf-3G5a3-aPGQx5cjdU1zTpolg_LKiCHmAZhtgAap2DIPSc32HK-6TVAf6Cd90KnfUwImBZ0nUCuz5eOFrXWe409j4i2jZltP0Rgm1gBYpXF9yh6sr4.9c_J4hshY-kswF21gVRjHr3Qp9XpiAz28BKeAwxEGS8&dib_tag=se&keywords=notebook&qid=1770767374&sr=8-8",
+      "thumbnail": "https://m.media-amazon.com/images/I/51HvjwRCBJL._AC_UL320_.jpg",
+      "title": "Sem título",
+      "rating": "4.5/5",
+      "prime": "Não"
+    }
+  },
+  {
+    "keyword": "fone bluetooth",
+    "score": 0.728,
+    "signals": {
+      "volume": 1.0,
+      "logistics": 0.7,
+      "quality": 0.9400000000000001,
+      "momentum": 0.3,
+      "saturation": 0.4
+    },
+    "meta": {
+      "marketplace": "Amazon BR",
+      "price": "R$ 125.00",
+      "url": "https://www.amazon.com.br/PHILIPS-Headphone-Bluetooth-TAH2209-bateria/dp/B0F5BQGVJM/ref=sr_1_8?dib=eyJ2IjoiMSJ9.vVfe3Wx6PLN8mBqHIgTWQiCaTUkRW5P38-J6XQoLXyxVcAxCH7zD2b3B2Q6IS4yyBkSChX2HQ31lqz6q3ukCpe9CkKbGAkLo-4h3kV7nekH1rvOIYpO8oXR1BsQgCT_xDOhaid5glNKV08-FC-deO0nX0amRmefDilwNePAZve6D8h0H6M_JG8IF6jDxuUHU1lJsSXF8T2xToDBbj_4xoiTwfuRCCS07eDW0Oe90uIAIH7YLv247QaKktO4bDAbLsljR1pIH2tRepEmS9FvPHpXReTQMXFQYrTtGmO0eVGE.URnvkHQBb4nRNFj7PAm_635K6f2w30UB8KpqC78yC5o&dib_tag=se&keywords=fone+bluetooth&qid=1770767366&sr=8-8",
+      "thumbnail": "https://m.media-amazon.com/images/I/41jjoSyX37L._AC_UL320_.jpg",
+      "title": "Sem título",
+      "rating": "4.7/5",
+      "prime": "Não"
+    }
+  },
+  {
+    "keyword": "smartphone",
+    "score": 0.64,
+    "signals": {
+      "volume": 1.0,
+      "logistics": 0.7,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "marketplace": "Mercado Livre",
+      "price": "R$ 1522.00",
+      "url": "https://www.mercadolivre.com.br/celular-samsung-galaxy-a16-128gb-4gb-ram-cmera-50mp-tela-67-nfc-preto/p/MLB44372580#polycard_client=search-desktop&search_layout=grid&position=6&type=product&tracking_id=47477857-73ae-49b5-aea4-4986fc6bc790&wid=MLB5313884566&sid=search",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_707658-MLA96866257617_102025-E.webp",
+      "title": "Celular Samsung Galaxy A16 128gb 4gb Ram Câmera 50mp Tela 6.7 Nfc Preto"
+    }
+  },
+  {
+    "keyword": "smartwatch",
+    "score": 0.64,
+    "signals": {
+      "volume": 1.0,
+      "logistics": 0.7,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "marketplace": "Mercado Livre",
+      "price": "R$ 668.00",
+      "url": "https://www.mercadolivre.com.br/relogio-inteligente-bluetooth-amazfit-active-2-amoled-redondo-132-com-160-modos-esportivos-cor-preto/p/MLB52430334#polycard_client=search-desktop&search_layout=grid&position=6&type=product&tracking_id=1bc4a908-071d-40ff-aab1-7c899b0da098&wid=MLB4305328301&sid=search",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_996559-MLA97964592253_112025-E.webp",
+      "title": "Relógio inteligente Bluetooth Amazfit Active 2 Amoled Redondo 1.32'' com 160 Modos esportivos Cor Pr"
+    }
+  },
+  {
+    "keyword": "televisão 4K",
+    "score": 0.64,
+    "signals": {
+      "volume": 1.0,
+      "logistics": 0.7,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "marketplace": "Mercado Livre",
+      "price": "R$ 2999.00",
+      "url": "https://www.mercadolivre.com.br/smart-tv-4k-43-lg-uhd-43ua75-processador-7-ai-ger8-4k-super-upscaling-google-cast-alexa-integrado-controle-remoto-padro-webos-25/p/MLB51227508#polycard_client=search-desktop&search_layout=grid&position=6&type=product&tracking_id=43fed13d-5dd1-44cb-88a1-d47553ea0f72&wid=MLB5751232640&sid=search",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_948824-MLA96872931345_102025-E.webp",
+      "title": "Smart TV 4K 43\" LG UHD 43UA75 Processador α7 AI Ger8 4K Super Upscaling Google Cast Alexa Integrado "
+    }
+  },
+  {
+    "keyword": "purificador de ar",
+    "score": 0.64,
+    "signals": {
+      "volume": 1.0,
+      "logistics": 0.7,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "marketplace": "Mercado Livre",
+      "price": "R$ 49.00",
+      "url": "https://www.mercadolivre.com.br/vaporizador-mesa-led-umidificador-usb-portatil-3-velocidades/p/MLB28726550#polycard_client=search-desktop&search_layout=grid&position=6&type=product&tracking_id=e16f90a2-534e-471b-8a2c-4bf8b8ce9e10&wid=MLB5780884298&sid=search",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_799388-MLA99622233856_122025-E.webp",
+      "title": "Vaporizador Mesa Led Umidificador USB Portátil 3 Velocidades"
+    }
+  },
+  {
+    "keyword": "Mourão, sobre risco de Bolsonaro perder patente: 'Extremamente desgastante' - Revista Oeste",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Mudança de padrão trará chuva e temporais frequentes no Sul do Brasil - MetSul Meteorologia",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Pedido de impeachment contra Ibaneis apresentado em 2025 é arquivado na CLDF - Correio Braziliense",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Sem amigos e sem petróleo, Cuba enfrenta crise que testa o regime - Brazil Journal",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Justiça determina paralisação de atividades em mina da Vale em Ouro Preto - Estado de Minas",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Câmara deve votar em maio PEC que acaba com a escala 6x1, diz Motta - G1",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "MP investiga ordem do Comando Vermelho sobre fim de brigas entre torcidas organizadas no Ceará - Diário do Nordeste",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "União Imperial é campeã do Grupo Especial do Carnaval 2026 em Santos - A Tribuna",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Trump disse à polícia nos anos 2000 que \"todo mundo sabia\" sobre Epstein - CNN Brasil",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Avião com 55 a bordo tem pane, perde controle em pouso e para na praia - R7",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Presidente da Colômbia diz ter escapado de tentativa de assassinato - G1",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Quem é o opositor venezuelano 'sequestrado por pessoas armadas' logo após ser libertado da prisão, segundo seu filho - BBC",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "José Paulo Kupfer: Inflação de janeiro confirma espaço para BC começar a cortar juros em março - UOL Economia",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Ibovespa Hoje Ao Vivo: Bolsa cai com ENEV3 e PETR4; VALE3 oscila - InfoMoney",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Agente do BC que cometeu erro no caso Master vai responder por conduta, diz presidente do TCU - Folha de S.Paulo",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Corte de rating, risco para reestruturação: o que fez Raízen cair abaixo dos R$ 0,80 - InfoMoney",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Mancha que causou megaexplosões no Sol formou ponto de interrogação deitado - CNN Brasil",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Primeiro eclipse de 2026 está chegando - Olhar Digital",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Confira as notas que Mario Tennis Fever vem recebendo - GameVicio - GameVicio",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "NVIDIA oferece Resident Evil Requiem grátis na compra de uma GeForce RTX 50 - GameVicio",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  }
+]

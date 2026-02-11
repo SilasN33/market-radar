@@ -1,0 +1,557 @@
+{
+  "generated_at": "20260211T010552Z",
+  "count": 25,
+  "opportunities": [
+    {
+      "keyword": "carrinho para suporte cpu nobreak com rodinhas force line preto",
+      "cluster": "Unclustered Signal",
+      "score": 52.8,
+      "signals": {
+        "intent_confidence": 0.2,
+        "market_validation": 1.0
+      },
+      "sources": [],
+      "meta": {
+        "validation_data": {
+          "item_count": 4,
+          "avg_price": 53.25
+        },
+        "amazon_validation": true
+      },
+      "analysis": {
+        "why": "N/A",
+        "buying_intent": "N/A",
+        "risk": "Unknown",
+        "competition": "Unknown"
+      }
+    },
+    {
+      "keyword": "fone de ouvido sem fio xiaomi redmi buds 6 play bluetooth5.4 preto",
+      "cluster": "Unclustered Signal",
+      "score": 49.7,
+      "signals": {
+        "intent_confidence": 0.2,
+        "market_validation": 0.8
+      },
+      "sources": [],
+      "meta": {
+        "validation_data": {
+          "item_count": 4,
+          "avg_price": 182.5
+        }
+      },
+      "analysis": {
+        "why": "N/A",
+        "buying_intent": "N/A",
+        "risk": "Unknown",
+        "competition": "Unknown"
+      }
+    },
+    {
+      "keyword": "galaxy buds core preto",
+      "cluster": "Unclustered Signal",
+      "score": 49.7,
+      "signals": {
+        "intent_confidence": 0.2,
+        "market_validation": 0.8
+      },
+      "sources": [],
+      "meta": {
+        "validation_data": {
+          "item_count": 4,
+          "avg_price": 433.25
+        }
+      },
+      "analysis": {
+        "why": "N/A",
+        "buying_intent": "N/A",
+        "risk": "Unknown",
+        "competition": "Unknown"
+      }
+    },
+    {
+      "keyword": "carregador turbo duplo 40w usb tipo c para iphone 8 x xr 11 12 13 14 pro max dti",
+      "cluster": "Unclustered Signal",
+      "score": 49.7,
+      "signals": {
+        "intent_confidence": 0.2,
+        "market_validation": 0.8
+      },
+      "sources": [],
+      "meta": {
+        "validation_data": {
+          "item_count": 4,
+          "avg_price": 69.25
+        }
+      },
+      "analysis": {
+        "why": "N/A",
+        "buying_intent": "N/A",
+        "risk": "Unknown",
+        "competition": "Unknown"
+      }
+    },
+    {
+      "keyword": "fone de ouvido bluetooth sem fio tws esportivo compatível com iphone samsung xia",
+      "cluster": "Unclustered Signal",
+      "score": 49.7,
+      "signals": {
+        "intent_confidence": 0.2,
+        "market_validation": 0.8
+      },
+      "sources": [],
+      "meta": {
+        "validation_data": {
+          "item_count": 4,
+          "avg_price": 111.0
+        }
+      },
+      "analysis": {
+        "why": "N/A",
+        "buying_intent": "N/A",
+        "risk": "Unknown",
+        "competition": "Unknown"
+      }
+    },
+    {
+      "keyword": "carregador adaptador usb-c de 20w para iphone apple branco - distribuidor autori",
+      "cluster": "Unclustered Signal",
+      "score": 49.7,
+      "signals": {
+        "intent_confidence": 0.2,
+        "market_validation": 0.8
+      },
+      "sources": [],
+      "meta": {
+        "validation_data": {
+          "item_count": 4,
+          "avg_price": 245.0
+        }
+      },
+      "analysis": {
+        "why": "N/A",
+        "buying_intent": "N/A",
+        "risk": "Unknown",
+        "competition": "Unknown"
+      }
+    },
+    {
+      "keyword": "cartão de memória para câmeras wi-fi drones 128gb micro sd classe 10 ultra 100mb",
+      "cluster": "Unclustered Signal",
+      "score": 49.7,
+      "signals": {
+        "intent_confidence": 0.2,
+        "market_validation": 0.8
+      },
+      "sources": [],
+      "meta": {
+        "validation_data": {
+          "item_count": 4,
+          "avg_price": 88.75
+        }
+      },
+      "analysis": {
+        "why": "N/A",
+        "buying_intent": "N/A",
+        "risk": "Unknown",
+        "competition": "Unknown"
+      }
+    },
+    {
+      "keyword": "kit chaves precisão manutenção profissional 115 peças magnético jogo compacta mu",
+      "cluster": "Unclustered Signal",
+      "score": 49.7,
+      "signals": {
+        "intent_confidence": 0.2,
+        "market_validation": 0.8
+      },
+      "sources": [],
+      "meta": {
+        "validation_data": {
+          "item_count": 4,
+          "avg_price": 46.25
+        }
+      },
+      "analysis": {
+        "why": "N/A",
+        "buying_intent": "N/A",
+        "risk": "Unknown",
+        "competition": "Unknown"
+      }
+    },
+    {
+      "keyword": "microfone lapela vianova kmf4-c preto sem fio cor preto tipo c android",
+      "cluster": "Unclustered Signal",
+      "score": 49.7,
+      "signals": {
+        "intent_confidence": 0.2,
+        "market_validation": 0.8
+      },
+      "sources": [],
+      "meta": {
+        "validation_data": {
+          "item_count": 4,
+          "avg_price": 107.25
+        }
+      },
+      "analysis": {
+        "why": "N/A",
+        "buying_intent": "N/A",
+        "risk": "Unknown",
+        "competition": "Unknown"
+      }
+    },
+    {
+      "keyword": "tela frontal display lcd compatível iphone 11 a2111 a2221 a223 6.1 polegadas pre",
+      "cluster": "Unclustered Signal",
+      "score": 49.7,
+      "signals": {
+        "intent_confidence": 0.2,
+        "market_validation": 0.8
+      },
+      "sources": [],
+      "meta": {
+        "validation_data": {
+          "item_count": 4,
+          "avg_price": 90.25
+        }
+      },
+      "analysis": {
+        "why": "N/A",
+        "buying_intent": "N/A",
+        "risk": "Unknown",
+        "competition": "Unknown"
+      }
+    },
+    {
+      "keyword": "tela display frontal lcd touch compativel iphone xr 6.1 top + pelicula 4store",
+      "cluster": "Unclustered Signal",
+      "score": 49.7,
+      "signals": {
+        "intent_confidence": 0.2,
+        "market_validation": 0.8
+      },
+      "sources": [],
+      "meta": {
+        "validation_data": {
+          "item_count": 4,
+          "avg_price": 78.0
+        }
+      },
+      "analysis": {
+        "why": "N/A",
+        "buying_intent": "N/A",
+        "risk": "Unknown",
+        "competition": "Unknown"
+      }
+    },
+    {
+      "keyword": "tela frontal display lcd touch compatível a02 a12 top + pelicula 4 store premium",
+      "cluster": "Unclustered Signal",
+      "score": 49.7,
+      "signals": {
+        "intent_confidence": 0.2,
+        "market_validation": 0.8
+      },
+      "sources": [],
+      "meta": {
+        "validation_data": {
+          "item_count": 4,
+          "avg_price": 59.5
+        }
+      },
+      "analysis": {
+        "why": "N/A",
+        "buying_intent": "N/A",
+        "risk": "Unknown",
+        "competition": "Unknown"
+      }
+    },
+    {
+      "keyword": "tela frontal display lcd touch compatível iphone 8 plus top branco + película",
+      "cluster": "Unclustered Signal",
+      "score": 49.7,
+      "signals": {
+        "intent_confidence": 0.2,
+        "market_validation": 0.8
+      },
+      "sources": [],
+      "meta": {
+        "validation_data": {
+          "item_count": 4,
+          "avg_price": 73.0
+        }
+      },
+      "analysis": {
+        "why": "N/A",
+        "buying_intent": "N/A",
+        "risk": "Unknown",
+        "competition": "Unknown"
+      }
+    },
+    {
+      "keyword": "plus do brasil cabo de força energia 10a tripolar p/ pc fonte computador cpu mon",
+      "cluster": "Unclustered Signal",
+      "score": 49.7,
+      "signals": {
+        "intent_confidence": 0.2,
+        "market_validation": 0.8
+      },
+      "sources": [],
+      "meta": {
+        "validation_data": {
+          "item_count": 4,
+          "avg_price": 1294.75
+        }
+      },
+      "analysis": {
+        "why": "N/A",
+        "buying_intent": "N/A",
+        "risk": "Unknown",
+        "competition": "Unknown"
+      }
+    },
+    {
+      "keyword": "cooler duplo rgb cpu am5 am4 am3 775 1150 1155 1200 1700 x99",
+      "cluster": "Unclustered Signal",
+      "score": 49.7,
+      "signals": {
+        "intent_confidence": 0.2,
+        "market_validation": 0.8
+      },
+      "sources": [],
+      "meta": {
+        "validation_data": {
+          "item_count": 4,
+          "avg_price": 72.0
+        }
+      },
+      "analysis": {
+        "why": "N/A",
+        "buying_intent": "N/A",
+        "risk": "Unknown",
+        "competition": "Unknown"
+      }
+    },
+    {
+      "keyword": "fonte de alimentacao 600w gs600 80 plus white gamemax cor preto",
+      "cluster": "Unclustered Signal",
+      "score": 49.7,
+      "signals": {
+        "intent_confidence": 0.2,
+        "market_validation": 0.8
+      },
+      "sources": [],
+      "meta": {
+        "validation_data": {
+          "item_count": 4,
+          "avg_price": 314.5
+        }
+      },
+      "analysis": {
+        "why": "N/A",
+        "buying_intent": "N/A",
+        "risk": "Unknown",
+        "competition": "Unknown"
+      }
+    },
+    {
+      "keyword": "gabinete gamer aquario mancer cv100, mid-tower, lat de vidro preto",
+      "cluster": "Unclustered Signal",
+      "score": 49.7,
+      "signals": {
+        "intent_confidence": 0.2,
+        "market_validation": 0.8
+      },
+      "sources": [],
+      "meta": {
+        "validation_data": {
+          "item_count": 4,
+          "avg_price": 410.25
+        }
+      },
+      "analysis": {
+        "why": "N/A",
+        "buying_intent": "N/A",
+        "risk": "Unknown",
+        "competition": "Unknown"
+      }
+    },
+    {
+      "keyword": "gabinete office desktop pc para placa micro atx compacto preto",
+      "cluster": "Unclustered Signal",
+      "score": 49.7,
+      "signals": {
+        "intent_confidence": 0.2,
+        "market_validation": 0.8
+      },
+      "sources": [],
+      "meta": {
+        "validation_data": {
+          "item_count": 4,
+          "avg_price": 75.25
+        }
+      },
+      "analysis": {
+        "why": "N/A",
+        "buying_intent": "N/A",
+        "risk": "Unknown",
+        "competition": "Unknown"
+      }
+    },
+    {
+      "keyword": "papel glossy microporo s/ brilho masterprint a4 260g cor branco",
+      "cluster": "Unclustered Signal",
+      "score": 49.7,
+      "signals": {
+        "intent_confidence": 0.2,
+        "market_validation": 0.8
+      },
+      "sources": [],
+      "meta": {
+        "validation_data": {
+          "item_count": 4,
+          "avg_price": 87.0
+        }
+      },
+      "analysis": {
+        "why": "N/A",
+        "buying_intent": "N/A",
+        "risk": "Unknown",
+        "competition": "Unknown"
+      }
+    },
+    {
+      "keyword": "filamento pla vermelho marsala 1kg impressão 3d 1.75mm voolt",
+      "cluster": "Unclustered Signal",
+      "score": 49.7,
+      "signals": {
+        "intent_confidence": 0.2,
+        "market_validation": 0.8
+      },
+      "sources": [],
+      "meta": {
+        "validation_data": {
+          "item_count": 4,
+          "avg_price": 139.5
+        }
+      },
+      "analysis": {
+        "why": "N/A",
+        "buying_intent": "N/A",
+        "risk": "Unknown",
+        "competition": "Unknown"
+      }
+    },
+    {
+      "keyword": "papel reciclado a4 75g caixa com 5 resmas reciclato report",
+      "cluster": "Unclustered Signal",
+      "score": 49.7,
+      "signals": {
+        "intent_confidence": 0.2,
+        "market_validation": 0.8
+      },
+      "sources": [],
+      "meta": {
+        "validation_data": {
+          "item_count": 4,
+          "avg_price": 168.0
+        }
+      },
+      "analysis": {
+        "why": "N/A",
+        "buying_intent": "N/A",
+        "risk": "Unknown",
+        "competition": "Unknown"
+      }
+    },
+    {
+      "keyword": "50 folhas papel fotográfico adesivo glossy 130g a4 cor branco",
+      "cluster": "Unclustered Signal",
+      "score": 49.7,
+      "signals": {
+        "intent_confidence": 0.2,
+        "market_validation": 0.8
+      },
+      "sources": [],
+      "meta": {
+        "validation_data": {
+          "item_count": 4,
+          "avg_price": 24.5
+        }
+      },
+      "analysis": {
+        "why": "N/A",
+        "buying_intent": "N/A",
+        "risk": "Unknown",
+        "competition": "Unknown"
+      }
+    },
+    {
+      "keyword": "filamento petg 3d masterprint cores variadas colorido print cor laranja",
+      "cluster": "Unclustered Signal",
+      "score": 49.7,
+      "signals": {
+        "intent_confidence": 0.2,
+        "market_validation": 0.8
+      },
+      "sources": [],
+      "meta": {
+        "validation_data": {
+          "item_count": 4,
+          "avg_price": 70.5
+        }
+      },
+      "analysis": {
+        "why": "N/A",
+        "buying_intent": "N/A",
+        "risk": "Unknown",
+        "competition": "Unknown"
+      }
+    },
+    {
+      "keyword": "microfone hollyland lark m2 duo combo duplo para 2 pessoas usb-c, lightning e ca",
+      "cluster": "Unclustered Signal",
+      "score": 49.7,
+      "signals": {
+        "intent_confidence": 0.2,
+        "market_validation": 0.8
+      },
+      "sources": [],
+      "meta": {
+        "validation_data": {
+          "item_count": 4,
+          "avg_price": 959.75
+        }
+      },
+      "analysis": {
+        "why": "N/A",
+        "buying_intent": "N/A",
+        "risk": "Unknown",
+        "competition": "Unknown"
+      }
+    },
+    {
+      "keyword": "tripé / bastão para celular portátil até 1,70 m com controle preto",
+      "cluster": "Unclustered Signal",
+      "score": 49.7,
+      "signals": {
+        "intent_confidence": 0.2,
+        "market_validation": 0.8
+      },
+      "sources": [],
+      "meta": {
+        "validation_data": {
+          "item_count": 4,
+          "avg_price": 180.5
+        }
+      },
+      "analysis": {
+        "why": "N/A",
+        "buying_intent": "N/A",
+        "risk": "Unknown",
+        "competition": "Unknown"
+      }
+    }
+  ]
+}

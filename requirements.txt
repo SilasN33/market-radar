@@ -1,0 +1,18 @@
+# Core dependencies
+requests==2.32.3
+python-dateutil==2.9.0.post0
+
+# Web framework
+flask==3.1.0
+flask-cors==5.0.0
+flask-login==0.6.3
+werkzeug==3.0.1
+
+# Data processing & scraping
+beautifulsoup4==4.12.3
+
+# Database (Postgres for production, SQLite for local)
+psycopg2-binary==2.9.9
+
+# Note: Using only pure Python packages to avoid C++ compilation requirements
+# xml.etree.ElementTree (built-in) is used for XML parsing

@@ -1,0 +1,414 @@
+[
+  {
+    "keyword": "guia de bolso de astronomia",
+    "score": 0.74,
+    "signals": {
+      "volume": 1.0,
+      "logistics": 0.7,
+      "quality": 1.0,
+      "momentum": 0.3,
+      "saturation": 0.4
+    },
+    "meta": {
+      "marketplace": "Amazon BR",
+      "price": "R$ 0.00",
+      "url": "https://www.amazon.com.br/Pequeno-Gloss%C3%A1rio-Astronomia-conceitos-compreender-ebook/dp/B0D9BSDPTG/ref=sr_1_8?dib=eyJ2IjoiMSJ9.0gWg6IkpFcPuGucK0uCdxvUZdhcxlSMS3Z9Lq-_85bkAUwsRLbBwJwri4U7cxyTJ0CRixunlN9IOKl-CzSMObNR1xTR-RGd4oFEttRnkMZgQX8qfZrfP923QvVrOtFfI3LyDHbUfgCYGADn2cD15GA.aSAbzo1gKKz_RFDaJBRd131an-o6TNf31KNkDxj3B44&dib_tag=se&keywords=guia+de+bolso+de+astronomia&qid=1770760058&sr=8-8",
+      "thumbnail": "https://m.media-amazon.com/images/I/51h6yLO9HDL._AC_UL320_.jpg",
+      "title": "Sem título",
+      "rating": "1.0/5",
+      "prime": "Não"
+    }
+  },
+  {
+    "keyword": "kit de jardinagem",
+    "score": 0.665,
+    "signals": {
+      "volume": 0.798,
+      "logistics": 0.7,
+      "quality": 0.9800000000000001,
+      "momentum": 0.3,
+      "saturation": 0.4
+    },
+    "meta": {
+      "marketplace": "Amazon BR",
+      "price": "R$ 205.00",
+      "url": "https://www.amazon.com.br/Jardinagem-Ferramentas-Armazenamento-Port%C3%A1teis-Inoxid%C3%A1vel/dp/B0DQLBZMYX/ref=sr_1_8?dib=eyJ2IjoiMSJ9.JwCylU-FJ6hWvx9eYCSfUA5x6j76X1-lLs8QGar21MDuvDb9y0O_JfVi1U8J_xUySli2Ei_mHhfL3NBBOIWi-gWd6MJNA8c68EUE767NsLJE3_-zZF94mSUva0BaptK0NQpRAMJWwOy6yKj5WQ4Q_R4NALKgfG2u0ucRGKYV0D7GVu-OP2Tt7SlR6knL0FxiQfJElWGoIwMjXdLSiCy0Z85DYX0ZVu1q09vsrNdJN6QqnEQVdpTXemJnfCeG540KeI8YoBo_gU-cd4HFotM7Y6Erzqd48Vw_7BzMWRUNJ4E.YIA9VOqpJLhjeUfQIxsvc4fOzUaATDk7e9C_Fjy0-hU&dib_tag=se&keywords=kit+de+jardinagem&qid=1770760064&sr=8-8&ufe=app_do%3Aamzn1.fos.fcd6d665-32ba-4479-9f21-b774e276a678",
+      "thumbnail": "https://m.media-amazon.com/images/I/61fpVKv8AQL._AC_UL320_.jpg",
+      "title": "Sem título",
+      "rating": "4.9/5",
+      "prime": "Não"
+    }
+  },
+  {
+    "keyword": "smartphone",
+    "score": 0.64,
+    "signals": {
+      "volume": 1.0,
+      "logistics": 0.7,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "marketplace": "Mercado Livre",
+      "price": "R$ 1522.00",
+      "url": "https://www.mercadolivre.com.br/celular-samsung-galaxy-a16-128gb-4gb-ram-cmera-50mp-tela-67-nfc-preto/p/MLB44372580#polycard_client=search-desktop&search_layout=grid&position=6&type=product&tracking_id=a472d85f-5e90-4184-bcdf-3d673bb364f9&wid=MLB5313884566&sid=search",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_707658-MLA96866257617_102025-E.webp",
+      "title": "Celular Samsung Galaxy A16 128gb 4gb Ram Câmera 50mp Tela 6.7 Nfc Preto"
+    }
+  },
+  {
+    "keyword": "cobertor aquecido",
+    "score": 0.639,
+    "signals": {
+      "volume": 0.998,
+      "logistics": 0.7,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "marketplace": "Mercado Livre",
+      "price": "R$ 299.00",
+      "url": "https://www.mercadolivre.com.br/lencol-termico-luxo-solteiro-controle-multiplas-temperaturas/p/MLB24564677#polycard_client=search-desktop&search_layout=grid&position=6&type=product&tracking_id=edcb1995-a667-40d9-8827-d781c9a66fa1&wid=MLB6111340014&sid=search",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_992364-MLA99947495619_112025-E.webp",
+      "title": "Lençol Térmico Luxo Solteiro Controle Múltiplas Temperaturas"
+    }
+  },
+  {
+    "keyword": "fone bluetooth",
+    "score": 0.61,
+    "signals": {
+      "volume": 1.0,
+      "logistics": 0.4,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "marketplace": "Mercado Livre",
+      "price": "R$ 2699.00",
+      "url": "https://www.mercadolivre.com.br/apple-airpods-pro-3-distribuidor-autorizado/p/MLB1054106888#polycard_client=search-desktop&search_layout=grid&position=6&type=product&tracking_id=6f985c82-3437-49db-9af2-0e5497786254&wid=MLB5741673858&sid=search",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_983699-MLA96154876825_102025-E.webp",
+      "title": "Apple AirPods Pro 3 - Distribuidor Autorizado"
+    }
+  },
+  {
+    "keyword": "smartwatch",
+    "score": 0.61,
+    "signals": {
+      "volume": 1.0,
+      "logistics": 0.4,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "marketplace": "Mercado Livre",
+      "price": "R$ 2999.00",
+      "url": "https://www.mercadolivre.com.br/smartwatch-huawei-watch-gt-6-pro-46mm-bateria-com-autonomia-de-ate-21-dias-mais-de-100-modos-esportivos-corrida-de-trilha-golfe-ciclismo-analise-de-ecg-compativel-com-ios-e-android-gps-preto/p/MLB54589097#polycard_client=search-desktop&search_layout=grid&position=6&type=product&tracking_id=af18d8e6-ae52-4439-83d0-7dd7519607c1&wid=MLB5819955684&sid=search",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_681278-MLA103632118572_012026-E.webp",
+      "title": "Smartwatch HUAWEI WATCH GT 6 Pro 46mm Bateria com Autonomia de Até 21 Dias Mais de 100 Modos Esporti"
+    }
+  },
+  {
+    "keyword": "Por caso Orelha, promotoria do MP-SC vai investigar delegado-geral, que é pré-candidato - ICL Notícias",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Mudança de padrão trará chuva e temporais frequentes no Sul do Brasil - MetSul Meteorologia",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Homem de confiança de Doca, apontado como 'braço de guerra' do CV, é preso em hospital do Rio após sofrer acidente - Extra online",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Real Time Big Data: Dr. Furlan lidera para governo do Amapá, com 66% - CNN Brasil",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Carlos diz que defesa de Bolsonaro vai pedir domiciliar: 'Riscos de morte' - Correio Braziliense",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Sem amigos e sem petróleo, Cuba enfrenta crise que testa o regime - Brazil Journal",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Quatro pessoas de uma família morrem soterradas em deslizamento de açude - Estado de Minas",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Polícia Federal deflagra Operação Recalque em Friburgo - Nova Friburgo em Foco",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Hugo Motta encaminha PEC do fim da escala 6x1 à CCJ - Correio Braziliense",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Rachadura de mais de 100 km em lago gera alerta e impressiona cientistas - MetSul Meteorologia",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Cúmplice de Epstein fica em silêncio em depoimento e advogado diz que ela pode depor se receber indulto de Trump - O Globo",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Cobra de 7,22 metros entra para o Guinness como a maior já medida - UOL Notícias",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "“Eu nunca te esquecerei”, tema do VI Dia Mundial dos Avós e dos Idosos - Vatican News",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Banco do Vaticano faz parceria inédita para lançar fundos de índice católicos - Valor Econômico",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Perícia em recuperação judicial não encontra atividade em 7 empresas do Grupo Fictor, que tentou comprar o Master - Valor Econômico",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Exclusivo: Agibank reestrutura IPO em NY, reduz preço e busca oferta menor, dizem fontes - Valor Econômico",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Mancha que causou megaexplosões no Sol formou ponto de interrogação deitado - CNN Brasil",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Primeiro eclipse de 2026 está chegando - Olhar Digital",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Bonobos são capazes de brincar de faz de conta, assim como crianças humanas - CNN Brasil",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Receita da Remedy cresce com Alan Wake 2 e Control, mas fracasso de FBC: Firebreak pesa nas contas - GameVicio",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  }
+]

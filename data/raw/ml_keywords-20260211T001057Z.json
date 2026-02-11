@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-02-11T00:10:57.451009+00:00",
+  "source": "mercadolivre_departments",
+  "keywords": [],
+  "count": 0,
+  "metadata": {
+    "departments": [
+      "Tecnologia",
+      "Casa e Eletrodomésticos",
+      "Moda",
+      "Esportes e Lazer",
+      "Beleza e Cuidado Pessoal",
+      "Bebês"
+    ],
+    "per_category": 5
+  }
+}

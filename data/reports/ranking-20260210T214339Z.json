@@ -1,0 +1,342 @@
+[
+  {
+    "keyword": "cobertor elétrico",
+    "score": 0.716,
+    "signals": {
+      "volume": 1.0,
+      "logistics": 0.5,
+      "quality": 0.9800000000000001,
+      "momentum": 0.3,
+      "saturation": 0.4
+    },
+    "meta": {
+      "marketplace": "Amazon BR",
+      "price": "R$ 451.00",
+      "rating": "4.4/5",
+      "prime": "Não",
+      "url": "https://www.amazon.com.br/HomeMate-Cobertor-el%C3%A9trico-aquecido-superaquecimento/dp/B0B5GKV9XN/ref=sr_1_8?dib=eyJ2IjoiMSJ9.owo1KJTvFidx3NBcP0D1xumip4doUOIgmcjZAAz2I59ij_b7of78a-E_hGJcFXfmB_E_EsH_ikY6ARZvskq8v1jTN5dOV_XRIwwlkePRsfFc6YS5zyZQB5m2h5hDYhvYA5rp-Vp6jHANRilE57VZLC2Iei5dJnpLVOktY5EWkBEvyd29uHTTu7wphj1x5dloSakDXaizycV1aZVU60gj36k0GKdnBVI0JzrrmG1EUqoWl4QM0s80Yq7bT7-p08Whf3iMiKvEA8snfhFAT1-CGl45PQgfSm7XSkeXNT0ETpY.6pQyfdGHGF0HtQknnpivYbrvX72BwVIAde_XOiRENvU&dib_tag=se&keywords=cobertor+eletrico&qid=1770759803&sr=8-8&ufe=app_do%3Aamzn1.fos.4bddec23-2dcf-4403-8597-e1a02442043d",
+      "thumbnail": "https://m.media-amazon.com/images/I/81M+ukDUKvL._AC_UL320_.jpg",
+      "title": "Sem título"
+    }
+  },
+  {
+    "keyword": "fone bluetooth",
+    "score": 0.534,
+    "signals": {
+      "volume": 0.502,
+      "quality": 0.9400000000000001,
+      "logistics": 0.5,
+      "momentum": 0.3,
+      "saturation": 0.4
+    },
+    "meta": {
+      "marketplace": "Amazon BR",
+      "price": "R$ 142.00",
+      "rating": "4.6/5",
+      "prime": "Não",
+      "url": "https://www.amazon.com.br/PHILIPS-TAT1109BK-00-Bluetooth-Microfone/dp/B0DVMQVVDY/ref=sr_1_8?dib=eyJ2IjoiMSJ9.6bFymcQNAFwDinbk1Lz45InJMPDoj-Wlvad-LltPAT3dN2LF5acJT4fz6TyPSY6X5deLnjjZaRIIScPEk38Ej0nR8yq8neT3TRotGXYu15y9u83olFGs4LZoxKUWSjv1Gg1Wof-Qychql7YfblxeocOhczdZ8lEKI_1TSISQjv70LI-mldTlidqcWG4-WX6Z2NMAmudQq00a9-rqR24b2FsQClhYowKK3fZ8ySRGg6vBUZ2_d5MtvZJxRWCciU_jbT_aS49iu5ZqaZ4DcZSGSsQaHCLSXBw-Y8ZllrhjQ8o.cMAJCaOccaa2RfSJ1WjbxHrTK0OBEq37wdE6L7uNleM&dib_tag=se&keywords=fone+bluetooth&qid=1770759793&sr=8-8",
+      "thumbnail": "https://m.media-amazon.com/images/I/519bjoeFBTL._AC_UL320_.jpg",
+      "title": "Sem título"
+    }
+  },
+  {
+    "keyword": "Por caso Orelha, promotoria do MP-SC vai investigar delegado-geral, que é pré-candidato - ICL Notícias",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Mudança de padrão trará chuva e temporais frequentes no Sul do Brasil - MetSul Meteorologia",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Homem de confiança de Doca, apontado como 'braço de guerra' do CV, é preso em hospital do Rio após sofrer acidente - Extra online",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Real Time Big Data: Dr. Furlan lidera para governo do Amapá, com 66% - CNN Brasil",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Carlos diz que defesa de Bolsonaro vai pedir domiciliar: 'Riscos de morte' - Correio Braziliense",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Sem amigos e sem petróleo, Cuba enfrenta crise que testa o regime - Brazil Journal",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Quatro pessoas de uma família morrem soterradas em deslizamento de açude - Estado de Minas",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Polícia Federal deflagra Operação Recalque em Friburgo - Nova Friburgo em Foco",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Hugo Motta encaminha PEC do fim da escala 6x1 à CCJ - Correio Braziliense",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Rachadura de mais de 100 km em lago gera alerta e impressiona cientistas - MetSul Meteorologia",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Cúmplice de Epstein fica em silêncio em depoimento e advogado diz que ela pode depor se receber indulto de Trump - O Globo",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Cobra de 7,22 metros entra para o Guinness como a maior já medida - UOL Notícias",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "“Eu nunca te esquecerei”, tema do VI Dia Mundial dos Avós e dos Idosos - Vatican News",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Ações da Eneva desabam até 19% com preço-teto de leilão muito abaixo do previsto - InfoMoney",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Banco do Vaticano faz parceria inédita para lançar fundos de índice católicos - Valor Econômico",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Exclusivo: Agibank reestrutura IPO em NY, reduz preço e busca oferta menor, dizem fontes - Valor Econômico",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Mancha que causou megaexplosões no Sol formou ponto de interrogação deitado - CNN Brasil",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Primeiro eclipse de 2026 está chegando - Olhar Digital",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Bonobos são capazes de brincar de faz de conta, assim como crianças humanas - CNN Brasil",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Receita da Remedy cresce com Alan Wake 2 e Control, mas fracasso de FBC: Firebreak pesa nas contas - GameVicio",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  }
+]

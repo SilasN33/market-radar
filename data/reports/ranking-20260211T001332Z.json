@@ -1,0 +1,414 @@
+[
+  {
+    "keyword": "painel solar",
+    "score": 0.74,
+    "signals": {
+      "volume": 1.0,
+      "logistics": 0.7,
+      "quality": 1.0,
+      "momentum": 0.3,
+      "saturation": 0.4
+    },
+    "meta": {
+      "marketplace": "Amazon BR",
+      "price": "R$ 1015.00",
+      "url": "https://www.amazon.com.br/ZOUPW-Portable-Fordable-Efficiency-Dustproof/dp/B0CR42CFJ9/ref=sr_1_8?dib=eyJ2IjoiMSJ9.k3-gR4L8WZLO64MzDnKvr0a9pEdQdcqcuLrlHl-t3tQfFkJGLhn8-3FGqcOh7Tw4OmrDkVllrbDi3xj5EaOiKtngB4AyC95aeqGCaPGjlxHSCygM0We9UQrmPA-Z5uzENntpMyV3dxa7xlvxTWCtakgJbXLklLl-j2Ue78iTjvglzhKXXqoy3gEqw9R1GFNXGNgh2NtgCNac5oYQDlRjCrxHGLA9i1YJqS-vy6cwuSTOrWDO1tlxF82OTcEJBtD8-qi3Wr51M3xRz7dtdcMm_0hgeWTZmLS3YnJd9HsrrzE.Frr1oY-0tQ6yuJYSzTYl2_fTxxtqsytN8vRrYNgIhCQ&dib_tag=se&keywords=painel+solar&qid=1770768805&sr=8-8&ufe=app_do%3Aamzn1.fos.25548f35-0de7-44b3-b28e-0f56f3f96147",
+      "thumbnail": "https://m.media-amazon.com/images/I/819saL2R3yL._AC_UL320_.jpg",
+      "title": "Sem título",
+      "rating": "4.6/5",
+      "prime": "Não"
+    }
+  },
+  {
+    "keyword": "umidificador de ar",
+    "score": 0.728,
+    "signals": {
+      "volume": 1.0,
+      "logistics": 0.7,
+      "quality": 0.9400000000000001,
+      "momentum": 0.3,
+      "saturation": 0.4
+    },
+    "meta": {
+      "marketplace": "Amazon BR",
+      "price": "R$ 161.00",
+      "url": "https://www.amazon.com.br/Black-Decker-Umidificador-Port%C3%A1til-Capacidade/dp/B075ZJXD5K/ref=sr_1_8?dib=eyJ2IjoiMSJ9.GXQ5lv-O1T4mlLJC9AtitcdvDzgWzC6P4EDHSXPwU-6J4i4AvjekIedlq5EzElFQGJ7ed5YISG3-8AfkqKM8rDJ7X1n870nMdO662ipW4Zl9gjzY9linSWR5VDyfJBe9MaLCL8cWQcw0Jd1P4s93lKf0j_utEj6WjMLpwCRPYfkkR7RkHFf1EuOtwkQsJTH0IC8cSDDUd4bNvKn120F_thOc5XPTS8GNImqkmk-VTdNN2LAKcVIVVzai8OjG2NIaZi0J1OvjWvGKj8VbT49hNbWz2Sr8NsIx01NrfDC_nq0.hhipuoHN6lHgIfjzMhHlLeaq1nl9S3TeBWjiIRJ2QnA&dib_tag=se&keywords=umidificador+de+ar&qid=1770768798&sr=8-8&ufe=app_do%3Aamzn1.fos.db68964d-7c0e-4bb2-a95c-e5cb9e32eb12",
+      "thumbnail": "https://m.media-amazon.com/images/I/618OBjPwZnL._AC_UL320_.jpg",
+      "title": "Sem título",
+      "rating": "4.6/5",
+      "prime": "Não"
+    }
+  },
+  {
+    "keyword": "chuveiro inteligente",
+    "score": 0.64,
+    "signals": {
+      "volume": 1.0,
+      "logistics": 0.7,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "marketplace": "Mercado Livre",
+      "price": "R$ 71.00",
+      "url": "https://www.mercadolivre.com.br/ducha-led-quadrada-muda-de-cor-conforme-temperatura-agua/up/MLBU3768564075#polycard_client=search-desktop&search_layout=grid&position=6&type=product&tracking_id=339b08d8-da65-4ba7-a7a2-466145a1752b&wid=MLB4460914333&sid=search",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_859803-MLB106523015815_022026-E.webp",
+      "title": "Ducha Led Quadrada Muda De Cor Conforme Temperatura Agua Prateado Cromado"
+    }
+  },
+  {
+    "keyword": "câmera de segurança",
+    "score": 0.497,
+    "signals": {
+      "volume": 0.678,
+      "logistics": 0.4,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "marketplace": "Mercado Livre",
+      "price": "R$ 299.00",
+      "url": "https://www.mercadolivre.com.br/tp-link-tapo-c500-cmera-de-seguranca-wifi-1080p-360-colorida-ip65/p/MLB41582369#polycard_client=search-desktop&search_layout=grid&position=6&type=product&tracking_id=dfbe401d-819a-4556-9992-0cf0022e26e5&wid=MLB3673890411&sid=search",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_692199-MLA99955989399_112025-E.webp",
+      "title": "TP-Link Tapo C500 Câmera de Segurança Wifi 1080P 360° Colorida IP65"
+    }
+  },
+  {
+    "keyword": "Mudança de padrão trará chuva e temporais frequentes no Sul do Brasil - MetSul Meteorologia",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Mourão, sobre risco de Bolsonaro perder patente: 'Extremamente desgastante' - Revista Oeste",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Pedido de impeachment contra Ibaneis apresentado em 2025 é arquivado na CLDF - Correio Braziliense",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Sem amigos e sem petróleo, Cuba enfrenta crise que testa o regime - Brazil Journal",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Justiça determina paralisação de atividades em mina da Vale em Ouro Preto - Estado de Minas",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Câmara deve votar em maio PEC que acaba com a escala 6x1, diz Motta - G1",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "MP investiga ordem do Comando Vermelho sobre fim de brigas entre torcidas organizadas no Ceará - Diário do Nordeste",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "União Imperial é campeã do Grupo Especial do Carnaval 2026 em Santos - A Tribuna",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Trump disse à polícia nos anos 2000 que \"todo mundo sabia\" sobre Epstein - CNN Brasil",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Presidente da Colômbia diz ter escapado de tentativa de assassinato - G1",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Quem é o opositor venezuelano 'sequestrado por pessoas armadas' logo após ser libertado da prisão, segundo seu filho - BBC",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Janeiro de 2026 foi o 5º mais quente da história no mundo, aponta observatório - UOL Notícias",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "José Paulo Kupfer: Inflação de janeiro confirma espaço para BC começar a cortar juros em março - UOL Economia",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Ibovespa Hoje Ao Vivo: Bolsa cai com ENEV3 e PETR4; VALE3 oscila - InfoMoney",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "'Selic a 2% é um dos fatores que explicam a derrota de Bolsonaro', diz Haddad - Folha de S.Paulo",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Agente do BC que cometeu erro no caso Master vai responder por conduta, diz presidente do TCU - Folha de S.Paulo",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Mancha que causou megaexplosões no Sol formou ponto de interrogação deitado - CNN Brasil",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Primeiro eclipse de 2026 está chegando - Olhar Digital",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Oceanhorn 3 é anunciado e chega em março com várias novidades para a franquia - GameVicio - GameVicio",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "Confira as notas que Mario Tennis Fever vem recebendo - GameVicio - GameVicio",
+    "score": 0.445,
+    "signals": {
+      "volume": 0.5,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "logistics": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "source": "Google News",
+      "related_queries": "3"
+    }
+  },
+  {
+    "keyword": "roupa de cama",
+    "score": 0.372,
+    "signals": {
+      "volume": 0.32,
+      "logistics": 0.4,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "marketplace": "Mercado Livre",
+      "price": "R$ 92.00",
+      "url": "https://produto.mercadolivre.com.br/MLB-3253464332-colchacobre-leito-dupla-face-matelado-casal-3-pecas-_JM?searchVariation=176916625657#polycard_client=search-desktop&searchVariation=176916625657&search_layout=grid&position=6&type=item&tracking_id=a4ffaf0f-d04f-42b7-9d62-1d802f7bc8ee",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_872213-MLB75683913267_042024-E.webp",
+      "title": "Colcha/cobre Leito Dupla Face Matelado Casal 3 Peças"
+    }
+  },
+  {
+    "keyword": "ventilador portátil",
+    "score": 0.338,
+    "signals": {
+      "volume": 0.224,
+      "logistics": 0.4,
+      "momentum": 0.3,
+      "quality": 0.5,
+      "saturation": 0.4
+    },
+    "meta": {
+      "marketplace": "Mercado Livre",
+      "price": "R$ 45.00",
+      "url": "https://www.mercadolivre.com.br/ventilador-repelente-de-insetos-mr1080-prata-mori-dimetro-39-cm-material-das-pas-plastico/p/MLB25554102#polycard_client=search-desktop&search_layout=grid&position=6&type=product&tracking_id=57c30ffc-05ce-47ee-8a94-9b2967c6c47a&wid=MLB3830983021&sid=search",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_648180-MLA95839583021_102025-E.webp",
+      "title": "Ventilador Repelente De Insetos Mr1080 Prata - Mori Diâmetro 39 Cm Material Das Pás Plástico"
+    }
+  }
+]

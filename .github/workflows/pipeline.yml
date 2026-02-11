@@ -1,0 +1,55 @@
+name: Market Radar Pipeline
+
+on:
+  schedule:
+    # Run every 6 hours
+    - cron: '0 */6 * * *'
+  workflow_dispatch: # Manual trigger
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install psycopg2-binary
+      
+      - name: Run Intent Signals
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: python sources/intent_signals.py
+      
+      - name: Run AI Processor
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: python sources/ai_processor.py
+        continue-on-error: true
+      
+      - name: Run Mercado Livre Scraper
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: python sources/mercado_livre.py
+      
+      - name: Run Ranker
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: python scoring/ranker.py
+      
+      - name: Notify on Success
+        if: success()
+        run: echo "✅ Pipeline completed successfully!"
+      
+      - name: Notify on Failure
+        if: failure()
+        run: echo "❌ Pipeline failed. Check logs."

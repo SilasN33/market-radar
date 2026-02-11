@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/server.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "api/server.py"
+    },
+    {
+      "src": "/(.*\\.(css|js|html|png|jpg|jpeg|gif|svg|ico))",
+      "dest": "/web/$1"
+    },
+    {
+      "src": "/",
+      "dest": "api/server.py"
+    }
+  ],
+  "env": {
+    "FLASK_ENV": "production",
+    "DATABASE_URL": "@database_url"
+  }
+}

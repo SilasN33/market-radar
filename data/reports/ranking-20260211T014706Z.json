@@ -1,0 +1,610 @@
+{
+  "generated_at": "20260211T014706Z",
+  "count": 25,
+  "opportunities": [
+    {
+      "keyword": "Fone De Ouvido Sem Fio Xiaomi Redmi Buds 6 Play Bluetooth5.4 Preto",
+      "cluster": "Unclustered Signal",
+      "score": 52.8,
+      "signals": {
+        "intent_confidence": 0.2,
+        "market_validation": 1.0
+      },
+      "sources": [],
+      "meta": {
+        "url": "https://click1.mercadolivre.com.br/mclics/clicks/external/MLB/count?a=UP64jKDaHaGLWD1d0C1CjwIqYuzsbS8QwX8nSr6vLlYlvk%2Fk2Biz946KxoJ5xeECDL85ZrIsu2l16dqcJBHg2M6UYMalCHeEGCXjMpkBrD51CDqIL3l65b3wG2fXxmm11A3azE76MEEHUv%2F6rCtMgY8M5GazlkZ%2BGV4wbB0B4IctzhZRlxujPyKBlro3T6wrd5KOc5E5APjnT8H8CCKsdiM2xx%2Bu0LjmCmQESWN8w8S96xLvq4EXsEkfHJkl34DCVVCei6Ed8RkPMYPswhq%2F7qqzDmkATjxYXeQj9hIVOORsRXiaR5eLVjzXs2iDBOGaBWHpnUQVX9720KPccBtCWF8nOc9UN%2FN1s2ZBcHMCYeakzUyL6NRSXc6PvordcaOStj54Ny%2FIdjIo5PNH3Uz1uwROsqLPWTCATxFtPy%2FhMAETBF6c8ZwrBKqxiInpz3WSrbiXzo0iwBPrJCtohUqpiqHgAthQmV3YPRmA%2FMk5fcb7G3qJDD%2BiMP53ufKCKak9r0af14S%2BoLi3cifdf5ExYVUNK6RVFpF7S%2FwxGJBKMxZhf3hQUqetmkHF96nvOat5xpFWhvmPreWAILvmTWJThzsfGcY5bmKB%2B1NnMV%2FNm4J9ccCbik9PL3M%2FNhHeRqofiL%2FDjg0NzDMNP9uUpEOf%2FMqxMCnzQtEcozVXh8FvA5yleZyJ7EZajF9XzBNwea09RfBp%2FyHztXyb%2B7SyPzQStPzHI0hWtlgHpymsroOSRhwSAT3GWh65kmZHvvxgVks6nOVyU14mEy3xkDe9UWBgAO4wGtNH3VZM%2FJ6YrmmPke%2Fq7fH7NwKWWehGZjc56OVRKUCa9x7DArtuEuYOkKPlCUbuFRZ2ZVtZ2NNRGL0k5F3CGin6yn5LXOIiRaHHKSZwPpS5kwDjnBm%2B0261Z42nXCXf2OJluikf%2F23g07Xpce2A9xyN&searchVariation=187653820991#polycard_client=search-desktop&is_advertising=true&searchVariation=187653820991&backend_model=search-backend&search_layout=grid&position=1&type=pad&tracking_id=7ec89b28-7181-4eaa-a127-996e3e449eeb",
+        "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_844057-MLB98492549177_112025-E.webp",
+        "price": "R$ 182.50",
+        "ml_avg_price": "R$ 182.50",
+        "ml_count": 4,
+        "marketplace": "Mercado Livre",
+        "amazon_validation": true,
+        "amz_avg_price": "R$ 101.75"
+      },
+      "analysis": {
+        "why": "N/A",
+        "buying_intent": "N/A",
+        "risk": "Unknown",
+        "competition": "Unknown"
+      }
+    },
+    {
+      "keyword": "Filamento Pla Vermelho Marsala 1kg Impressão 3d 1.75mm Voolt",
+      "cluster": "Unclustered Signal",
+      "score": 52.8,
+      "signals": {
+        "intent_confidence": 0.2,
+        "market_validation": 1.0
+      },
+      "sources": [],
+      "meta": {
+        "url": "https://www.mercadolivre.com.br/filamento-pla-vermelho-marsala-1kg-impresso-3d-175mm-voolt/p/MLB26012164#polycard_client=search-desktop&search_layout=grid&position=1&type=product&tracking_id=353d9ba5-4e3a-4bf4-bd22-362a9771c515&wid=MLB4012678143&sid=search",
+        "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_648220-MLA105666139206_012026-E.webp",
+        "price": "R$ 139.50",
+        "ml_avg_price": "R$ 139.50",
+        "ml_count": 4,
+        "marketplace": "Mercado Livre",
+        "amazon_validation": true,
+        "amz_avg_price": "R$ 117.00"
+      },
+      "analysis": {
+        "why": "N/A",
+        "buying_intent": "N/A",
+        "risk": "Unknown",
+        "competition": "Unknown"
+      }
+    },
+    {
+      "keyword": "Galaxy Buds Core Preto",
+      "cluster": "Unclustered Signal",
+      "score": 49.7,
+      "signals": {
+        "intent_confidence": 0.2,
+        "market_validation": 0.8
+      },
+      "sources": [],
+      "meta": {
+        "url": "https://www.mercadolivre.com.br/fone-ouvido-bluetooth-54-samsung-galaxy-buds-core-original/up/MLBU3523177038#polycard_client=search-desktop&search_layout=grid&position=1&type=product&tracking_id=2cd760dc-89d0-4d1e-958e-b35c822a5113&wid=MLB5858973002&sid=search",
+        "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_906246-MLB97118361375_112025-E.webp",
+        "price": "R$ 433.25",
+        "ml_avg_price": "R$ 433.25",
+        "ml_count": 4,
+        "marketplace": "Mercado Livre"
+      },
+      "analysis": {
+        "why": "N/A",
+        "buying_intent": "N/A",
+        "risk": "Unknown",
+        "competition": "Unknown"
+      }
+    },
+    {
+      "keyword": "Carregador Turbo Duplo 40w Usb Tipo C Para iPhone 8 X Xr 11 12 13 14 Pro Max Dti",
+      "cluster": "Unclustered Signal",
+      "score": 49.7,
+      "signals": {
+        "intent_confidence": 0.2,
+        "market_validation": 0.8
+      },
+      "sources": [],
+      "meta": {
+        "url": "https://click1.mercadolivre.com.br/mclics/clicks/external/MLB/count?a=bpPl%2FxwFWLVAWhWDsgPFx1KXDJhOr%2BvGvN8TaCSYbsplG2HphOu501xDLg1fEEjpBUkPT4T7Dr8S%2B%2B3F5M3apIq5w7GeCe60G5bTmBIfITApLHPGPnjsBa4Zl6UIfP5sAHDwCRMeTAiwwEHncEasBFXq3tKyCO0arKsJIjsTFALkFF21s0eWYrYrS6St1j0PwcPTCQSewPp6qZHtn2sh%2BsCIow30P94FzcS3Ez5ORQcQoH2dlKV8qZItbQSdke1qNPvwGjre3rlOUDdSKcW8BKC%2F76J8CWIA0p6Kt0pVo5nK9ufY0hrNakcut2fxb%2FmkGs5Y5imibzmgDR%2FDJ7%2B82hF%2FFytLV5fYNZGfX0aP0t%2FPChx2C90EtjdgKcqjoyIffrBvCtoMwOWZacuke0sK0GCLYE729SufMZAun%2BSsT9N%2FsYzSkh4sOaQrNdYdv3cOEG797gPM4GUwOW%2BBfBkdLEti4SUgdW9hVdKyGMeB46PNpTsdxpXwR%2F%2Bt%2BCwazpUrA7txd2EljJAM8dg3aGlWwr1cMzjipanTm8wZzaO8iIebGF0sH9WfC7UBFots5ZRm0AVNHWuRQ9%2F4L4R24V224QwSfQoRoyW8NBGzrZHk8F4x0zZdbAmPY1574ntvsFY9HLuzZg1NJFVxCzYadeVD2LezHml7u7LN4Mu%2BmGUxJIEu9V%2BkwAWWukFl%2FR8Kp9X1b2%2BjRqMvQ2TkUf6o8Pw21YmRwo2H53TsmvlFUCf4exm%2FOzCPSKfIKdRNSQBaDsR1ojAoQ5SjPQ7%2BQRsc35KcVDzFA1HEu7YPaSJIDsdfMa1%2BsCDnEzZTCP79M%2FWf4gbWNtVpRIhiqdZC6%2FLll2N8tW4yJAHxOrbUft52ux0ajHq16o14GhqloJ2Jji5uYuTlw7dWytrUbNFYiulZTuReLrfYMoMa8iTKbgWB%2F%2B8klx6WZnlEbew%2BLhQGuMkAfc5MWKfLA1aukMQKcMLjBTZ99BWJIoAjZKHWiizk#polycard_client=search-desktop&is_advertising=true&searchVariation=MLB52377046&backend_model=search-backend&search_layout=grid&position=1&type=pad&tracking_id=084937d3-c112-496c-9ec9-766a43a230dd&wid=MLB5767328494&sid=search",
+        "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_609505-MLA105673814081_012026-E.webp",
+        "price": "R$ 69.25",
+        "ml_avg_price": "R$ 69.25",
+        "ml_count": 4,
+        "marketplace": "Mercado Livre"
+      },
+      "analysis": {
+        "why": "N/A",
+        "buying_intent": "N/A",
+        "risk": "Unknown",
+        "competition": "Unknown"
+      }
+    },
+    {
+      "keyword": "Fone De Ouvido Bluetooth Sem Fio Tws Esportivo Compatível Com iPhone Samsung Xia",
+      "cluster": "Unclustered Signal",
+      "score": 49.7,
+      "signals": {
+        "intent_confidence": 0.2,
+        "market_validation": 0.8
+      },
+      "sources": [],
+      "meta": {
+        "url": "https://click1.mercadolivre.com.br/mclics/clicks/external/MLB/count?a=VSJsVpFl0T4AjSjS2y3V%2BteiWyBlxcVxCFr8b7%2BiijJVGYXb2w1x55kCwIyUqSHZ3eLwGA7E1ZRbIZyzX17Owrwd7rtJXffyrZqWVAUfeME9S3q3u4PjNXPCgw39fsaHIApteQSdSS7iXn7W%2FfhnpZujJjsKy8Y4860yk2sPVMd0uq93Zn63bsNAOZRgpeS1R5vH1nQHVqSU9wLdRq0juiVNNSJlu3%2BsQ91RrBGk%2F1Bkd2XJDSquiKJvvkbxREKHHHqT6Yi70wFtkmh9XM%2FcJ7GM666pAN3VpPRFs2f9rCR0bJ0WfHggunMpPIPYeijjufNVkPp3I0rZRytzmorKoRVD2IXymRq%2FjFM%2FlFkgG3wnulC96Ij9sFCZ3QzxrBkcnW%2BUkoQRymZr8umxnjOMIBrMoARZh8XpmpMuDHWKVvC2I39V4DSg2AOdpOxtaBWA3Bq8cxC3eZEeI7HfgGtIOR9atVlff08izg0iYxC287QzNodCLnJWR33G8N6PivgkXrIrLHY1lc1eT2NkEw6%2Bh3qq30TuV1391PePKJZl5bAEnv5W12bGq7oyNpBR0OpwMI24YVK8HNoYNc3jIEE5cFlqswRzpE7jhFCePexK9oRF58XZyQrRPfV4mFW4zCLRCBoJMMH1Y8Is1UE7WqCYz%2FPCp%2Fqt4FSkTKPnOvDI0uSnMkyAX1kXHgThPSwbgccYLDYLcUsmYac9ZNuFW1ptJWSuF58DL6IomAx1BmBgO4AUCv7GsK4BdCD82TCYQsb6%2BawyVcNKotRFfM%2BtqiOANtvGwFUFQRPK0ld6hhbpm6zUDN4nkk84eiDIWSVAI0axPEs5CsM89%2BOX6KHXHw2v6qgbsel6RvEfvXFnP%2BZCiYGFxyLZqB9i6UcokZrJnIo5U7cVtxbO4mQsP0FxWve32gFHxr8GytA63M78xmo6ls78Iecz8j8Twkz8Sj0Yq3kNNwlQHE3deJTpQfZJwLx7q2ATEMh%2FELZg33qhL47QIIiE3P0MYHgIUh9x3RsZxINSHR37TQj0STtO54yvo5nK3NzkVhwVFw%3D%3D#polycard_client=search-desktop&is_advertising=true&searchVariation=MLB64982225&backend_model=search-backend&search_layout=grid&position=1&type=pad&tracking_id=2d958b20-a45a-48a2-b279-4e94c2411f27&wid=MLB6203363338&sid=search",
+        "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_710471-MLA105717869904_012026-E.webp",
+        "price": "R$ 111.00",
+        "ml_avg_price": "R$ 111.00",
+        "ml_count": 4,
+        "marketplace": "Mercado Livre"
+      },
+      "analysis": {
+        "why": "N/A",
+        "buying_intent": "N/A",
+        "risk": "Unknown",
+        "competition": "Unknown"
+      }
+    },
+    {
+      "keyword": "Carregador Adaptador Usb-c De 20w Para iPhone Apple Branco - Distribuidor Autori",
+      "cluster": "Unclustered Signal",
+      "score": 49.7,
+      "signals": {
+        "intent_confidence": 0.2,
+        "market_validation": 0.8
+      },
+      "sources": [],
+      "meta": {
+        "url": "https://click1.mercadolivre.com.br/mclics/clicks/external/MLB/count?a=gUBvmZCtLedBUF0SQEjL9f%2B%2BWaXCyU98teObISo9u0vNkwlP2%2BgP3nkWExGMVUlomWG4u32mxp%2BS3lDkHgbf5XW3m5NwEu9AFB0V%2BfJK5uojZzvXLc6jzXRrbF3iwzgDb%2BAiRX3qqhdsyfQMORDL4S8QOHqmw%2Br0%2Fc%2BJzGRuvdg%2FGfqgn3EhjSxzauFczXr7NkwUTdeb%2F1CtKepYP5CVClcrZE21B%2F%2FLKbayCS6jlNVxRelzs7lwf6Z%2Fs6IR61EfdBn56Xi9uD5xfA9e9tcvK1z7MVhkf4SNuz06PnbYqoH9asX6SjfjtazRDQpbMtwAcIP5snrYa1n5MRqFi2jdkV7FSMYD7Fx6lBg7YiwWCIo%2BU3F9qJmemOipVF4bonuH7mx855ULLZ7R3FxyxKsi9Q%2Fb51F7UV%2FMiY6sHpzFzrHoMd5iSuvNZKnccyhEHSvX%2BBPn7SRmoMPi%2FBB4KE9RrlmIK3aeClF7h2NymZguVbENdWhemZjhuamDTR3UocKzF2R7uuFTmzOgBzr%2FFprHZf2vYza9hW%2BsrRiz7kFyBKTIwuDJX6S%2FD09r6m4NUOREtiEsiFgDVZ1JW1IZkPvn67Eb6zxOPxgqMHVZC7m8czPCOFaRnpk0ga9UUAavm5YivU4dk7RibkX8wY%2BXFP%2FCiaUoUktqVZBDvDCUffb419F%2F%2B0FqwUPlBBQ29vvQ%2B5ekayqYG2%2BEnHw2fzOtwe5%2Fnctjnc0o26VO829OSSmRtD6JmZ9rB8CKKtkFJTJfOB6lM9ghrOagtqovDDkg3CCcL%2F2jpGg8qUjq0eWkFqy4QAaocLXQCNg6PTzLje%2FCsqbzS6%2Fjo4VYCwzBaPuLTsGna%2BW7WDIg4Sj3C%2FHI9ID41Ov%2FjVkthKwe%2BkE%2F9%2F8%2F7kDU33krsJFLL8PdoWgQxl2iH5cMxJPcsK14kWuECptj1cp4zFchqnvbVu6hUyCpjJVeuBuJ#polycard_client=search-desktop&is_advertising=true&searchVariation=MLB42350382&backend_model=search-backend&search_layout=grid&position=1&type=pad&tracking_id=3d1a2e31-4a1f-428c-b249-20a13bebafba&wid=MLB6190671718&sid=search",
+        "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_691798-MLA99989586717_112025-E.webp",
+        "price": "R$ 190.25",
+        "ml_avg_price": "R$ 190.25",
+        "ml_count": 4,
+        "marketplace": "Mercado Livre"
+      },
+      "analysis": {
+        "why": "N/A",
+        "buying_intent": "N/A",
+        "risk": "Unknown",
+        "competition": "Unknown"
+      }
+    },
+    {
+      "keyword": "Cartão De Memória Para Câmeras Wi-fi Drones 128gb Micro Sd Classe 10 Ultra 100mb",
+      "cluster": "Unclustered Signal",
+      "score": 49.7,
+      "signals": {
+        "intent_confidence": 0.2,
+        "market_validation": 0.8
+      },
+      "sources": [],
+      "meta": {
+        "url": "https://click1.mercadolivre.com.br/mclics/clicks/external/MLB/count?a=uiGnju7e1DnEH9vHN%2F%2FNoH6zHzQOM3%2BoBq6NDvPI3NesyLAjAN7awm4nnFOGiqi2jLTsSuIhc0T%2B1mCHU%2F92ArvzB0FESwpZaJAwGiZvFAxrA%2BjXE6B6%2BDoOFRDajTn%2B4GhxRHK5JBTkI%2BGF3X6aVMt16AAXq583cdjvSs9nYh0k5g7tADAL57SrJLLknK1%2F9cew32xyys2MK3arWx2f7dCPv7bftkyE1UvaC89FMDxs8BnHsFu%2FVRcembK0LFY4VcYEOac5%2FB3yDrjqVTn8PBxaGdwJtu8R11Xo3fMVNp3Dfu2zT4qU6GKqlHN0EPg3r8y01nNRTuqhO07Or%2BQAZh1dZrNbBMkNHuPf%2BhUv9y5fNdCN21rYDXY1DEvDn20ZjITQvRZVzX4WGcaoeqOvkZTg2kbdqyVJ%2Fr83HDCIxVwhx2Hbcf2gSYc%2FQG8L0xUS96RAOOjslmfm%2FiP%2FHdN%2FbQTCdUItSXkpUXiTSkGm9Nf6iSAe%2B3DrmuiH81SWrggFwSQhuJbjPLpHysjhgzv2UmgpnCJqsJ%2Fvb1xTPJsarpBwvCRdwmw1C7mLlQmvKzuoKj2UpSHEammGWFRkQFX8DwrB5A2zJBtSlazxxT9ziJ6DOnFAoNuHcjCfIff16O%2F0jS8SWtNgyrMWneXk4BvnBJ0F2rbFR%2FrPpghuqRfJowPq10j8XJgfaMtsCI5%2BiBhlYzifBvaLukYWpXwW5VNrvqXrOjjeK5q8W9AO5SaRAC0x5YAL2U9cbwVvKEHZCjBjt5jPWp9Un3DtGwrs8nUhKuul0g5J3bANqEIkCFA9Zs%2BcnhyvAoRikLHfuFHvLTpYin23ILrA3nApi6BEo%2Bbiq%2BDh6ZdgeMMOUs5omV2FV8k6p7v9Uesq3eiQVONfaTKRYsWkes%2FpUmw2xdjTyzSEaoSJVwvAEFKvVmnWdaGk4ApQLxlVXIMBdoM7JXX6jdinWqWf8HC7C9NjO%2FTODixu5rnPMwVNxC04PrlrFzaqWw%2Fu8%2BLXPavlTATva0u9Ns2mVkiVSOk%3D#polycard_client=search-desktop&is_advertising=true&searchVariation=MLB62411193&backend_model=search-backend&search_layout=grid&position=1&type=pad&tracking_id=185bf068-d772-44db-b8ee-6ce6c35e1cc8&wid=MLB4454111851&sid=search",
+        "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_925205-MLA105101818420_012026-E.webp",
+        "price": "R$ 75.00",
+        "ml_avg_price": "R$ 75.00",
+        "ml_count": 4,
+        "marketplace": "Mercado Livre"
+      },
+      "analysis": {
+        "why": "N/A",
+        "buying_intent": "N/A",
+        "risk": "Unknown",
+        "competition": "Unknown"
+      }
+    },
+    {
+      "keyword": "Kit Chaves Precisão Manutenção Profissional 115 Peças Magnético Jogo Compacta Mu",
+      "cluster": "Unclustered Signal",
+      "score": 49.7,
+      "signals": {
+        "intent_confidence": 0.2,
+        "market_validation": 0.8
+      },
+      "sources": [],
+      "meta": {
+        "url": "https://click1.mercadolivre.com.br/mclics/clicks/external/MLB/count?a=tgj0Qna2bBSanWBEnkXZLwC1Uc%2Bc%2BEwdU%2Bsq5MAH7YbMM2aUCXd1VTlLoqW0GCNK%2FV9whMs5PJ7VM24xI%2F6fqpQHby54MJja0g76o2SAVC9akYl1xhdyeidZSnNvlRe289gJ8zFuw7kNIaCZDFOeoZ95uPFdcyUNx1N4xofsdszI%2B%2FryKpU%2FHBj7GzXXEz2ZoLLozcAcnblHn4sU%2FQSF9uKYMrM8zjZA63AiZliXxGmzkweC2Rw6gIcMUM78SdEFOqBbTICMVQZkzVHemHO%2FoxWnf%2BZdXgL5lbZICoZOpmamPPp1%2BBk6MHczACdhbbJZorKz4M5d9P1%2BqCzjrxHa%2BdLM%2BI08Pt1BMcb3dyNY1n3PElEfgH2MXWPmqUXNoxEK3mj%2BSou0ZcXhdbhvv8AgYOfqgBilxZvLfNTZWEStCRTZ3I1Eak6uOuRHhj5TASlSDApHAHo3Cp3yAPc1hFDG1J4XDJPyrH7lYrSEUIaAC34VjcQw%2BOiNumcRcexmep%2BvHU3b9mLPNBoAxTSADl2kOcDlN2Jhz%2FqHasrGEB9yJD6Aoxpj0O5DHvRunVXP8Pddir9rSYvql2yUxXnuvJzGHgtRP6PU4chqhzzWy50%2F6DUFPRWk9v%2BRdNPeQYydIxRMvnGVNoRDxv24ZRHf8yKuH1XRV4b8xqHb%2Blsa8Gt8TMgZHU7wuhYB7cuZI6FqHpTYK4nbHg5pVrBKSCywnPa8YjicAbZh3cayMavCTz4hYqotW1QpOBJirFcmFFH8DOWa969MIK2gF52x3Ix%2FBySvFb6XQDQQxtDRUuLPxhUwN2YacXqocfIN%2F6HIz43eEJmiUbqZyJsExD9EPiUDUDNzZGzdjUz%2FDIrSIHKjMyIcbNrWV79LlcoO%2BznUF22KktUWxMqjjyDztD79u6xlRH7HD84wr5ocD5ZpKt0LimrSW79wc09asvAssfh9MFvjWI2V2pSCTbV9kMr3q3JZ1ziBwxGpnnc5vkybI5S%2FqPagQENk5Mt9fUg3zkq6yW3fppKkDj76qvbPBlBjX0M1QSvD%2FhPtFzj8zdByAyFahmKMFzQUw9GRTuufFOLgF18l%2B0dEQAFlRlFv95zTL0WqSA%3D%3D#polycard_client=search-desktop&is_advertising=true&searchVariation=MLB62110990&backend_model=search-backend&search_layout=grid&position=1&type=pad&tracking_id=2cf94c02-acd4-4062-931f-9ad78ac56ae3&wid=MLB5932934872&sid=search",
+        "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_811365-MLA98225735337_112025-E.webp",
+        "price": "R$ 46.25",
+        "ml_avg_price": "R$ 46.25",
+        "ml_count": 4,
+        "marketplace": "Mercado Livre"
+      },
+      "analysis": {
+        "why": "N/A",
+        "buying_intent": "N/A",
+        "risk": "Unknown",
+        "competition": "Unknown"
+      }
+    },
+    {
+      "keyword": "Microfone Lapela Vianova Kmf4-c Preto Sem Fio Cor Preto Tipo C Android",
+      "cluster": "Unclustered Signal",
+      "score": 49.7,
+      "signals": {
+        "intent_confidence": 0.2,
+        "market_validation": 0.8
+      },
+      "sources": [],
+      "meta": {
+        "url": "https://www.mercadolivre.com.br/microfone-lapel-ima-tipo-c-anti-ruido-redondo-kaidi-preto/up/MLBU3181548548#polycard_client=search-desktop&search_layout=grid&position=1&type=product&tracking_id=20694574-1b27-42dd-abb0-125ff95b3045&wid=MLB5390293582&sid=search",
+        "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_832086-MLB84764675171_052025-E.webp",
+        "price": "R$ 107.25",
+        "ml_avg_price": "R$ 107.25",
+        "ml_count": 4,
+        "marketplace": "Mercado Livre"
+      },
+      "analysis": {
+        "why": "N/A",
+        "buying_intent": "N/A",
+        "risk": "Unknown",
+        "competition": "Unknown"
+      }
+    },
+    {
+      "keyword": "Tela Frontal Display Lcd Compatível iPhone 11 A2111 A2221 A223 6.1 Polegadas Pre",
+      "cluster": "Unclustered Signal",
+      "score": 49.7,
+      "signals": {
+        "intent_confidence": 0.2,
+        "market_validation": 0.8
+      },
+      "sources": [],
+      "meta": {
+        "url": "https://www.mercadolivre.com.br/tela-frontal-display-lcd-compativel-iphone-11-a2111-a2221-a223-61-polegadas/p/MLB54105571#polycard_client=search-desktop&search_layout=grid&position=1&type=product&tracking_id=c2981955-79e3-4a8e-adc9-1e91dce607f4&wid=MLB5686247084&sid=search",
+        "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_801757-MLA99985594755_112025-E.webp",
+        "price": "R$ 90.25",
+        "ml_avg_price": "R$ 90.25",
+        "ml_count": 4,
+        "marketplace": "Mercado Livre"
+      },
+      "analysis": {
+        "why": "N/A",
+        "buying_intent": "N/A",
+        "risk": "Unknown",
+        "competition": "Unknown"
+      }
+    },
+    {
+      "keyword": "Tela Display Frontal Lcd Touch Compativel iPhone XR 6.1 Top + Pelicula 4store",
+      "cluster": "Unclustered Signal",
+      "score": 49.7,
+      "signals": {
+        "intent_confidence": 0.2,
+        "market_validation": 0.8
+      },
+      "sources": [],
+      "meta": {
+        "url": "https://www.mercadolivre.com.br/tela-display-frontal-lcd-touch-compativel-iphone-xr-61-top-pelicula-4store/p/MLB54008267#polycard_client=search-desktop&search_layout=grid&position=1&type=product&tracking_id=8c261f22-be10-4736-8e22-fe12ad88fc0a&wid=MLB4073014043&sid=search",
+        "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_821603-MLA99368919258_112025-E.webp",
+        "price": "R$ 78.00",
+        "ml_avg_price": "R$ 78.00",
+        "ml_count": 4,
+        "marketplace": "Mercado Livre"
+      },
+      "analysis": {
+        "why": "N/A",
+        "buying_intent": "N/A",
+        "risk": "Unknown",
+        "competition": "Unknown"
+      }
+    },
+    {
+      "keyword": "Tela Frontal Display Lcd Touch Compatível A02 A12 Top + Pelicula 4 Store Premium",
+      "cluster": "Unclustered Signal",
+      "score": 49.7,
+      "signals": {
+        "intent_confidence": 0.2,
+        "market_validation": 0.8
+      },
+      "sources": [],
+      "meta": {
+        "url": "https://www.mercadolivre.com.br/tela-frontal-display-lcd-touch-compativel-a02-a12-top-pelicula-4-store-premium/p/MLB46884484#polycard_client=search-desktop&search_layout=grid&position=1&type=product&tracking_id=7ba5f769-cc1b-4f8d-8af5-dc2dd6ea7eb9&wid=MLB4009972715&sid=search",
+        "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_728608-MLA99600812750_122025-E.webp",
+        "price": "R$ 59.00",
+        "ml_avg_price": "R$ 59.00",
+        "ml_count": 4,
+        "marketplace": "Mercado Livre"
+      },
+      "analysis": {
+        "why": "N/A",
+        "buying_intent": "N/A",
+        "risk": "Unknown",
+        "competition": "Unknown"
+      }
+    },
+    {
+      "keyword": "Tela Frontal Display Lcd Touch Compatível iPhone 8 Plus Top Branco + Película",
+      "cluster": "Unclustered Signal",
+      "score": 49.7,
+      "signals": {
+        "intent_confidence": 0.2,
+        "market_validation": 0.8
+      },
+      "sources": [],
+      "meta": {
+        "url": "https://www.mercadolivre.com.br/tela-frontal-display-lcd-touch-compativel-iphone-8-plus-top-branco-pelicula/p/MLB53844743#polycard_client=search-desktop&search_layout=grid&position=1&type=product&tracking_id=7b3fc918-fdaf-40b8-a6fb-0008b90838d3&wid=MLB5631601874&sid=search",
+        "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_743334-MLA99989553297_112025-E.webp",
+        "price": "R$ 73.00",
+        "ml_avg_price": "R$ 73.00",
+        "ml_count": 4,
+        "marketplace": "Mercado Livre"
+      },
+      "analysis": {
+        "why": "N/A",
+        "buying_intent": "N/A",
+        "risk": "Unknown",
+        "competition": "Unknown"
+      }
+    },
+    {
+      "keyword": "Plus Do Brasil Cabo De Força Energia 10a Tripolar P/ Pc Fonte Computador Cpu Mon",
+      "cluster": "Unclustered Signal",
+      "score": 49.7,
+      "signals": {
+        "intent_confidence": 0.2,
+        "market_validation": 0.8
+      },
+      "sources": [],
+      "meta": {
+        "url": "https://www.mercadolivre.com.br/pc-computador-cpu-i5-3470-ssd-sata-8-ou-16gb-ram-mon-19/up/MLBU1471092887#polycard_client=search-desktop&search_layout=grid&position=1&type=product&tracking_id=91fdf3e4-d1b0-4add-ae24-5449457b55c2&wid=MLB4681620786&sid=search",
+        "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_903326-MLB105667494952_012026-E.webp",
+        "price": "R$ 2363.00",
+        "ml_avg_price": "R$ 2363.00",
+        "ml_count": 4,
+        "marketplace": "Mercado Livre"
+      },
+      "analysis": {
+        "why": "N/A",
+        "buying_intent": "N/A",
+        "risk": "Unknown",
+        "competition": "Unknown"
+      }
+    },
+    {
+      "keyword": "Cooler Duplo Rgb Cpu Am5 Am4 Am3 775 1150 1155 1200 1700 X99",
+      "cluster": "Unclustered Signal",
+      "score": 49.7,
+      "signals": {
+        "intent_confidence": 0.2,
+        "market_validation": 0.8
+      },
+      "sources": [],
+      "meta": {
+        "url": "https://www.mercadolivre.com.br/cooler-duplo-rgb-cpu-am5-am4-am3-775-1150-1155-1200-1700-x99/up/MLBU3323488373#polycard_client=search-desktop&search_layout=grid&position=1&type=product&tracking_id=34bb2e1b-d5b4-48a8-b831-ea83456e8f87&wid=MLB4138931143&sid=search",
+        "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_973075-MLB99598255855_112025-E.webp",
+        "price": "R$ 72.00",
+        "ml_avg_price": "R$ 72.00",
+        "ml_count": 4,
+        "marketplace": "Mercado Livre"
+      },
+      "analysis": {
+        "why": "N/A",
+        "buying_intent": "N/A",
+        "risk": "Unknown",
+        "competition": "Unknown"
+      }
+    },
+    {
+      "keyword": "Fonte De Alimentacao 600w Gs600 80 Plus White Gamemax Cor Preto",
+      "cluster": "Unclustered Signal",
+      "score": 49.7,
+      "signals": {
+        "intent_confidence": 0.2,
+        "market_validation": 0.8
+      },
+      "sources": [],
+      "meta": {
+        "url": "https://www.mercadolivre.com.br/fonte-de-alimentacao-600w-gs600-80-plus-white-gamemax-cor-preto/p/MLB22211506#polycard_client=search-desktop&search_layout=grid&position=1&type=product&tracking_id=5893ebb5-abcf-446a-9aa7-e95823e4dd86&wid=MLB4014060455&sid=search",
+        "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_959510-MLA104803260424_012026-E.webp",
+        "price": "R$ 324.50",
+        "ml_avg_price": "R$ 324.50",
+        "ml_count": 4,
+        "marketplace": "Mercado Livre"
+      },
+      "analysis": {
+        "why": "N/A",
+        "buying_intent": "N/A",
+        "risk": "Unknown",
+        "competition": "Unknown"
+      }
+    },
+    {
+      "keyword": "Carrinho Para Suporte Cpu Nobreak Com Rodinhas Force Line Preto",
+      "cluster": "Unclustered Signal",
+      "score": 49.7,
+      "signals": {
+        "intent_confidence": 0.2,
+        "market_validation": 0.8
+      },
+      "sources": [],
+      "meta": {
+        "url": "https://click1.mercadolivre.com.br/mclics/clicks/external/MLB/count?a=aqLMNDiETvZJtlgx2T5Ut8xxKWiO38YO3uIcTv30H0BliJcXlSwP94I94GqH%2BbpCaczTWM5zgO5X%2FRN1HU8kL4%2BT0Kj6jXCXw54b%2BWcEolP9w1Klb90d8XW4TrlFr0xUP0J48VnMJTLrRSfHsupdy9D11RxL6hN0K%2FfvtsZnAGcgooz%2FMBMskDMeGrxo%2F%2Fx9yT5unGQeH9iARiAHLclf59ItkGXWLdfyq8t3AIRlOTLQQMyEUAjyf6o2N7qtzQ5h0obJ9irbf631D71X18pG2zPketuhajX24usQcOtPuVWahL7Jyskpc9IRdcWJV0EGEHeHbjyiN6Fa7bop0uuchs4e9qXfE5%2BdmTlMsmRcVUzYMzQZjR1R8NvcDx9G2YMmkKqA9gxYnP0KxsBv0Pb7aVBrenJA%2F0mQoaWtgFpFyg3x9zY%2Bvzg2JfpPzliiloBngTC5jq1tbtzceRSI%2B6cCBtxPn0OlUObBxwiG3IPkQ7iP09LFMUugaDa24sLnxGgozjl41SCCniDZlP%2B1C2AU0FEbLHlQ2OJ1D8njAUF3Lit5G3LMyInZcgDA5s95inoBuwmg6UACIVWvfqx05gm7sqsJzCzZ83bNCONW5XR5wyRwqEYAEhJEeEJmsPyO98a5nbabQtbcI%2F76MX0FbnMXVB2A0feLYvbemIqt%2F5OlfvZhKOkKpGjQaw0DlEQZLdVjSBsAviAy7TZJB7UjDHQAqQmswzy9Hj0T92JcgnrQLz0IHn9a%2BkE%2FbTwP%2FzS%2FsqQOuE43NmtHY60ULhoEkDFm54TsmrIbxN8xs8x53i%2Bz1vKXqiIRsivcRzb5IOIkZ1uXoM%2FhHevMHd%2FHnQwFWyd4bXmkAGGNgyKSVVvvDWMQwx8dab2pywvWvg7rIUGJ7vbDEwRpjHa5jQ1XvzxL1o5NhA6VNnnnuQVGXsEABsgpT4oKaTTVGWVchxqWNdNmfnVW8%2Byg#polycard_client=search-desktop&is_advertising=true&searchVariation=MLB27108511&backend_model=search-backend&search_layout=grid&position=1&type=pad&tracking_id=e9386a30-4371-49fc-a1f1-968ef7f3aa11&wid=MLB4047095924&sid=search",
+        "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_988779-MLA106095862831_012026-E.webp",
+        "price": "R$ 53.25",
+        "ml_avg_price": "R$ 53.25",
+        "ml_count": 4,
+        "marketplace": "Mercado Livre"
+      },
+      "analysis": {
+        "why": "N/A",
+        "buying_intent": "N/A",
+        "risk": "Unknown",
+        "competition": "Unknown"
+      }
+    },
+    {
+      "keyword": "Gabinete Gamer Aquario Mancer Cv100, Mid-tower, Lat De Vidro Preto",
+      "cluster": "Unclustered Signal",
+      "score": 49.7,
+      "signals": {
+        "intent_confidence": 0.2,
+        "market_validation": 0.8
+      },
+      "sources": [],
+      "meta": {
+        "url": "https://www.mercadolivre.com.br/gabinete-gamer-aquario-mancer-cv100-mid-tower-lat-de-vidro-preto/p/MLB42833515#polycard_client=search-desktop&search_layout=grid&position=1&type=product&tracking_id=c7ffde9e-f5d2-44b3-8a9a-738098b1cbf3&wid=MLB3907568261&sid=search",
+        "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_771462-MLA104790647346_012026-E.webp",
+        "price": "R$ 410.25",
+        "ml_avg_price": "R$ 410.25",
+        "ml_count": 4,
+        "marketplace": "Mercado Livre"
+      },
+      "analysis": {
+        "why": "N/A",
+        "buying_intent": "N/A",
+        "risk": "Unknown",
+        "competition": "Unknown"
+      }
+    },
+    {
+      "keyword": "Gabinete Office Desktop Pc Para Placa Micro Atx Compacto Preto",
+      "cluster": "Unclustered Signal",
+      "score": 49.7,
+      "signals": {
+        "intent_confidence": 0.2,
+        "market_validation": 0.8
+      },
+      "sources": [],
+      "meta": {
+        "url": "https://www.mercadolivre.com.br/gabinete-office-desktop-pc-para-placa-micro-atx-compacto/up/MLBU3222641278#polycard_client=search-desktop&search_layout=grid&position=1&type=product&tracking_id=355dad60-707b-4eb6-8793-010812b8924b&wid=MLB5417781992&sid=search",
+        "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_685727-MLB92292703442_092025-E.webp",
+        "price": "R$ 75.25",
+        "ml_avg_price": "R$ 75.25",
+        "ml_count": 4,
+        "marketplace": "Mercado Livre"
+      },
+      "analysis": {
+        "why": "N/A",
+        "buying_intent": "N/A",
+        "risk": "Unknown",
+        "competition": "Unknown"
+      }
+    },
+    {
+      "keyword": "Papel Glossy Microporo S/ Brilho Masterprint A4 260g Cor Branco",
+      "cluster": "Unclustered Signal",
+      "score": 49.7,
+      "signals": {
+        "intent_confidence": 0.2,
+        "market_validation": 0.8
+      },
+      "sources": [],
+      "meta": {
+        "url": "https://www.mercadolivre.com.br/500-folhas-papel-glossy-microporo-s-brilho-masterprint-a4-260g-cor-branco/p/MLB46424890#polycard_client=search-desktop&search_layout=grid&position=1&type=product&tracking_id=90459481-d38e-46fc-8cb7-65cbf4b83cbe&wid=MLB5440835966&sid=search",
+        "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_847156-MLA82689881845_022025-E.webp",
+        "price": "R$ 87.00",
+        "ml_avg_price": "R$ 87.00",
+        "ml_count": 4,
+        "marketplace": "Mercado Livre"
+      },
+      "analysis": {
+        "why": "N/A",
+        "buying_intent": "N/A",
+        "risk": "Unknown",
+        "competition": "Unknown"
+      }
+    },
+    {
+      "keyword": "Papel Reciclado A4 75g Caixa Com 5 Resmas Reciclato Report",
+      "cluster": "Unclustered Signal",
+      "score": 49.7,
+      "signals": {
+        "intent_confidence": 0.2,
+        "market_validation": 0.8
+      },
+      "sources": [],
+      "meta": {
+        "url": "https://www.mercadolivre.com.br/papel-a4-sulfite-cor-branco-75g-500-folhas-premium-resma/p/MLB21590318#polycard_client=search-desktop&search_layout=grid&position=1&type=product&tracking_id=e88865d4-903a-44b7-bd44-d080de78ece2&wid=MLB3411498499&sid=search",
+        "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_854982-MLA100705339178_122025-E.webp",
+        "price": "R$ 168.00",
+        "ml_avg_price": "R$ 168.00",
+        "ml_count": 4,
+        "marketplace": "Mercado Livre"
+      },
+      "analysis": {
+        "why": "N/A",
+        "buying_intent": "N/A",
+        "risk": "Unknown",
+        "competition": "Unknown"
+      }
+    },
+    {
+      "keyword": "50 Folhas Papel Fotográfico Adesivo Glossy 130g A4 Cor Branco",
+      "cluster": "Unclustered Signal",
+      "score": 49.7,
+      "signals": {
+        "intent_confidence": 0.2,
+        "market_validation": 0.8
+      },
+      "sources": [],
+      "meta": {
+        "url": "https://www.mercadolivre.com.br/50-folhas-papel-fotografico-adesivo-glossy-130g-a4-cor-branco/p/MLB21590330#polycard_client=search-desktop&search_layout=grid&position=1&type=product&tracking_id=241f11f5-36d1-401e-b267-9f9bd670bb12&wid=MLB5996721390&sid=search",
+        "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_933008-MLA97219264545_112025-E.webp",
+        "price": "R$ 24.50",
+        "ml_avg_price": "R$ 24.50",
+        "ml_count": 4,
+        "marketplace": "Mercado Livre"
+      },
+      "analysis": {
+        "why": "N/A",
+        "buying_intent": "N/A",
+        "risk": "Unknown",
+        "competition": "Unknown"
+      }
+    },
+    {
+      "keyword": "Filamento Petg 3d Masterprint Cores Variadas Colorido Print Cor Laranja",
+      "cluster": "Unclustered Signal",
+      "score": 49.7,
+      "signals": {
+        "intent_confidence": 0.2,
+        "market_validation": 0.8
+      },
+      "sources": [],
+      "meta": {
+        "url": "https://www.mercadolivre.com.br/filamento-petg-3d-masterprint-cores-variadas-colorido-print-cor-laranja/p/MLB46675225#polycard_client=search-desktop&search_layout=grid&position=1&type=product&tracking_id=4938ad29-6734-4332-8a1b-4e013477c6e6&wid=MLB5691429490&sid=search",
+        "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_987022-MLA82865779937_032025-E.webp",
+        "price": "R$ 70.50",
+        "ml_avg_price": "R$ 70.50",
+        "ml_count": 4,
+        "marketplace": "Mercado Livre"
+      },
+      "analysis": {
+        "why": "N/A",
+        "buying_intent": "N/A",
+        "risk": "Unknown",
+        "competition": "Unknown"
+      }
+    },
+    {
+      "keyword": "Microfone Hollyland Lark M2 Duo Combo Duplo Para 2 Pessoas Usb-c, Lightning E Ca",
+      "cluster": "Unclustered Signal",
+      "score": 49.7,
+      "signals": {
+        "intent_confidence": 0.2,
+        "market_validation": 0.8
+      },
+      "sources": [],
+      "meta": {
+        "url": "https://www.mercadolivre.com.br/sistema-microfone-lapela-lark-m2-combo-hollyland/up/MLBU3239392353#polycard_client=search-desktop&search_layout=grid&position=1&type=product&tracking_id=430bb83b-8bae-419b-8575-5a251eff9fdf&wid=MLB4096749363&sid=search",
+        "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_976697-MLB93433491506_092025-E.webp",
+        "price": "R$ 959.75",
+        "ml_avg_price": "R$ 959.75",
+        "ml_count": 4,
+        "marketplace": "Mercado Livre"
+      },
+      "analysis": {
+        "why": "N/A",
+        "buying_intent": "N/A",
+        "risk": "Unknown",
+        "competition": "Unknown"
+      }
+    },
+    {
+      "keyword": "Tripé / Bastão Para Celular Portátil Até 1,70 M Com Controle Preto",
+      "cluster": "Unclustered Signal",
+      "score": 49.7,
+      "signals": {
+        "intent_confidence": 0.2,
+        "market_validation": 0.8
+      },
+      "sources": [],
+      "meta": {
+        "url": "https://click1.mercadolivre.com.br/mclics/clicks/external/MLB/count?a=4bPyx3s%2Bo9NQO6lLdOIOgLklDzJm0YHeK3UcN%2BjIekXkWwmX4SBNNhAtTvk0gfrEKd66JGtxv3FnwcRG%2FoyX2t0WVV4LBLfQwUdSQr%2Bum%2FmJx7zzRzhBH3rNr%2FvBRBuNPLj%2FK1BqzYtBqrbCL0lLxX5cgHiIkaTavJ6Xo5VBErL0jll6qye3PN%2BzTQmJTVW1ek9mIIydBI9dPclQFBA%2FDcln8yiyLnaVY8Cwg%2BeOsdvR6qSlnv5%2FveHVWGOTOJkftaSzTOXvqGtmPkGgp%2BPxNiJ%2FwJ9KMYLiDJPWwzshzyQUYBeoqp%2BprqC%2FV3YChaW6BOVXRYqYrRQ33eX0qXMwkMDEoOtbovE7yMgRxwv2%2BhwQ1MNJeUXOLHaNxRJv2aMI4JDTYV868mbUYFz782B7xxC7aJuA96Bgs9i97WLh8ROmRMH0cI1%2BluL0PoIrEo6yE7HLin%2FFfv%2F5%2F3NDYefchnKS0KzDHOUhClXFwyzWJ6WnDP2j%2FEOnlFzKKlKc5eTEus1J2smqgOnLcA3S9Cs8scjsrRFWogFvxuXbBbUneoE3GrD9qNT5uVUrSw3WhzbpO51VaxDNp0zvgVsy3boW0AbyzH0%2BbN4HsJegJi7%2BcJEqLw7ADtEjZHN7idie5zyq71OVzP1T8GMlmz8hsvUjqQFgk59Ta1W0sZtdg2nZU27xUnokUX2PpRraNVvmqjOQRKJvgc8QhIBmabtQt6ZJ0lu0DHmW%2FdJu21h5odGocASjtqIPcEQKwOCRS9Eku1%2F%2BT%2F9QQhfwy%2B9hqmSRIohtLV0XCEtV4f7T8lOA1hl3xm07PF8jvw1Kli8ZACEm27%2F0dZzvDjbpvofGr7dPpogUhtTBcB80nptksuLI94%2FPAhgWCwcoTrWxPgoYnh5S9LvSuUtSFLPVqU%2BwYDC7NyffQ5r0SSTLGIgA86PZR4Z9ukBFw3OKT1H4tf8GiGTICksR1RDoamn6z6J8XGZvOpqT#polycard_client=search-desktop&is_advertising=true&searchVariation=MLBU3324733914&backend_model=search-backend&search_layout=grid&position=1&type=pad&tracking_id=76385395-91d3-4a13-8a2d-66fee88bfa73&wid=MLB4135468915&sid=search",
+        "thumbnail": "https://http2.mlstatic.com/D_Q_NP_2X_975313-MLB89539118039_082025-E.webp",
+        "price": "R$ 104.50",
+        "ml_avg_price": "R$ 104.50",
+        "ml_count": 4,
+        "marketplace": "Mercado Livre"
+      },
+      "analysis": {
+        "why": "N/A",
+        "buying_intent": "N/A",
+        "risk": "Unknown",
+        "competition": "Unknown"
+      }
+    }
+  ]
+}
