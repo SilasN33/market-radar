@@ -14,7 +14,12 @@ import sys
 # Add root directory to path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from sources import database
-from auth import auth_bp, User
+
+# Import auth from api folder
+try:
+    from api.auth import auth_bp, User
+except ImportError:
+    from auth import auth_bp, User
 
 app = Flask(__name__, static_folder='../web', static_url_path='')
 app.config['SECRET_KEY'] = 'dev-secret-key-change-in-production'  # TODO: Move to env
