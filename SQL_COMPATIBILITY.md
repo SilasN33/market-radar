@@ -1,83 +1,108 @@
 # 🔄 Compatibilidade SQLite ↔ PostgreSQL
 
-## Problema 3: Incompatibilidade de Placeholders SQL ✅ RESOLVIDO
+## Problema 3: Incompatibilidade de Sintaxe SQL ✅ RESOLVIDO
 
-### Erro Encontrado
+### Erros Encontrados
+
+#### 3.1 Placeholders de Parâmetros
 ```
 psycopg2.errors.SyntaxError: syntax error at end of input
 LINE 1: SELECT * FROM users WHERE email = ?
 ```
 
-### Causa
-O código foi escrito originalmente para **SQLite**, que usa `?` como placeholder de parâmetros em queries SQL:
-```sql
-SELECT * FROM users WHERE email = ?
+#### 3.2 DDL - AUTOINCREMENT
+```
+psycopg2.errors.SyntaxError: syntax error at or near "AUTOINCREMENT"
+LINE 3: id INTEGER PRIMARY KEY AUTOINCREMENT,
 ```
 
-Mas o **PostgreSQL** usa `%s` como placeholder:
-```sql
-SELECT * FROM users WHERE email = %s
-```
+### Causa
+
+O código foi escrito originalmente para **SQLite**, que usa sintaxe diferente do **PostgreSQL**:
+
+| Recurso | SQLite | PostgreSQL |
+|---------|--------|------------|
+| **Placeholders** | `?` | `%s` |
+| **Auto Increment** | `INTEGER PRIMARY KEY AUTOINCREMENT` | `SERIAL PRIMARY KEY` |
+| **Data/Hora** | `DATETIME` | `TIMESTAMP` |
 
 ### Solução Implementada
 
-Criamos um **wrapper automático** (`PostgresCursor`) que converte os placeholders SQLite para PostgreSQL **automaticamente**, sem precisar modificar nenhum código do `database.py`.
+Criamos um **wrapper inteligente** (`PostgresCursor`) que converte **automaticamente** toda a sintaxe SQLite para PostgreSQL, incluindo:
+
+✅ **Placeholders** (`?` → `%s`)
+✅ **Auto Increment** (`AUTOINCREMENT` → `SERIAL`)
+✅ **Data/Hora** (`DATETIME` → `TIMESTAMP`)
 
 #### Como Funciona
 
 ```python
 class PostgresCursor:
-    """Wrapper que converte SQLite placeholders (?) para PostgreSQL (%s)"""
-    def __init__(self, cursor):
-        self._cursor = cursor
-        
-    def execute(self, query, params=None):
-        # Converte ? para %s automaticamente
-        if query and '?' in query:
+    """Wrapper que converte sintaxe SQLite para PostgreSQL"""
+    
+    def _convert_query(self, query):
+        # 1. Converte placeholders: ? -> %s
+        if '?' in query:
             query = query.replace('?', '%s')
-        return self._cursor.execute(query, params)
+        
+        # 2. Converte DDL para CREATE TABLE
+        if 'CREATE TABLE' in query.upper():
+            # AUTOINCREMENT -> SERIAL
+            query = query.replace('INTEGER PRIMARY KEY AUTOINCREMENT', 'SERIAL PRIMARY KEY')
+            
+            # DATETIME -> TIMESTAMP
+            query = query.replace('DATETIME', 'TIMESTAMP')
+        
+        return query
 ```
 
-#### Benefícios
+### Exemplos de Conversão Automática
 
-✅ **Zero modificações** no código existente (`database.py`)
-✅ **Compatibilidade total** com SQLite localmente e PostgreSQL em produção
-✅ **Transparente** - funciona automaticamente via monkey patch
-✅ **Mantém todas as funcionalidades** - proxy completo do cursor
+#### Exemplo 1: Criação de Tabelas (DDL)
 
-### Exemplo de Conversão Automática
-
-**Código original (SQLite):**
-```python
-cursor.execute("SELECT * FROM users WHERE email = ?", (email,))
+**SQLite (código original):**
+```sql
+CREATE TABLE IF NOT EXISTS users (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    email TEXT UNIQUE NOT NULL,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+)
 ```
 
 **Convertido automaticamente para PostgreSQL:**
+```sql
+CREATE TABLE IF NOT EXISTS users (
+    id SERIAL PRIMARY KEY,
+    email TEXT UNIQUE NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+)
+```
+
+#### Exemplo 2: Queries com Placeholders
+
+**SQLite:**
+```python
+cursor.execute("SELECT * FROM users WHERE email = ?", (email,))
+cursor.execute("INSERT INTO users (email, name) VALUES (?, ?)", (email, name))
+```
+
+**Convertido automaticamente:**
 ```python
 cursor.execute("SELECT * FROM users WHERE email = %s", (email,))
+cursor.execute("INSERT INTO users (email, name) VALUES (%s, %s)", (email, name))
 ```
 
-### Queries Afetadas (todas corrigidas automaticamente)
+### Tabelas Afetadas (todas corrigidas automaticamente)
 
-O wrapper converte automaticamente placeholders em:
-- ✅ Todas as queries de SELECT
-- ✅ Todas as queries de INSERT
-- ✅ Todas as queries de UPDATE
-- ✅ Todas as queries de DELETE
-- ✅ Queries com múltiplos placeholders
-
-Exemplos do código que agora funcionam:
-```python
-# Single parameter
-cursor.execute("SELECT id FROM users WHERE email = ?", (email,))
-
-# Multiple parameters  
-cursor.execute("INSERT INTO users (email, password, name, role, credits) VALUES (?, ?, ?, ?, ?)", 
-               (email, password_hash, name, role, 10))
-
-# Complex queries
-cursor.execute("SELECT * FROM opportunities WHERE created_at = ? LIMIT ?", (latest, limit))
-```
+O wrapper converte DDL para todas as tabelas no `database.py`:
+1. ✅ `products` - AUTOINCREMENT + DATETIME
+2. ✅ `price_history` - AUTOINCREMENT + DATETIME
+3. ✅ `scan_logs` - AUTOINCREMENT + DATETIME
+4. ✅ `intent_clusters` - AUTOINCREMENT + DATETIME
+5. ✅ `opportunities` - AUTOINCREMENT + DATETIME
+6. ✅ `users` - AUTOINCREMENT + DATETIME
+7. ✅ `user_projects` - AUTOINCREMENT + DATETIME
+8. ✅ `saved_opportunities` - AUTOINCREMENT + DATETIME
 
 ### Implementação Técnica
 
