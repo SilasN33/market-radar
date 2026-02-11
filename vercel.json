@@ -16,7 +16,7 @@
       "dest": "/web/$1"
     },
     {
-      "src": "/",
+      "src": "/(.*)",
       "dest": "api/server.py"
     }
   ],
