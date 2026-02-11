@@ -1,190 +1,260 @@
-# Vercel Deployment Guide - Market Radar
+# Deploy Vercel + Supabase (100% Gratuito)
 
-## 🚀 Deploy Grátis na Vercel
+## 🎯 Stack Completa Gratuita
 
-### Pré-requisitos
-1. Conta GitHub (gratuita)
-2. Conta Vercel (gratuita) - https://vercel.com
-3. Código no GitHub
+- **Frontend + API**: Vercel (grátis)
+- **Database**: Supabase Postgres (grátis - 500 MB)
+- **Pipeline**: GitHub Actions (grátis)
 
 ---
 
-## 📋 Passo a Passo
+## 📋 Passo 1: Configurar Supabase (5 minutos)
 
-### 1. Preparar o Repositório GitHub
+### 1.1 Criar Conta e Projeto
 
-```bash
+1. Acesse https://supabase.com
+2. Clique **Start your project**
+3. Faça login com GitHub
+4. Clique **New Project**
+5. Preencha:
+   - **Name**: `market-radar`
+   - **Database Password**: Escolha uma senha forte (anote!)
+   - **Region**: Escolha a mais próxima (ex: `South America (São Paulo)`)
+   - **Pricing Plan**: Free
+6. Clique **Create new project**
+7. Aguarde ~2 minutos (setup do banco)
+
+### 1.2 Obter Connection String
+
+1. No painel do Supabase, vá em **Settings** (⚙️) → **Database**
+2. Role até **Connection string**
+3. Selecione **URI** 
+4. Copie a string (algo como):
+   ```
+   postgresql://postgres.abc123:[YOUR-PASSWORD]@aws-0-sa-east-1.pooler.supabase.com:6543/postgres
+   ```
+5. **Substitua `[YOUR-PASSWORD]`** pela senha que você criou
+6. **Guarde essa URL** - você vai usar várias vezes
+
+---
+
+## 📋 Passo 2: Migrar Database (Local)
+
+### 2.1 Configurar URL localmente
+
+```powershell
+# Cole sua connection string do Supabase
+$env:DATABASE_URL="postgresql://postgres.abc123:SUA_SENHA@aws-0-sa-east-1.pooler.supabase.com:6543/postgres"
+```
+
+### 2.2 Rodar Migration
+
+```powershell
+python scripts/migrate_to_postgres.py
+```
+
+Você verá:
+```
+🔄 Connecting to Supabase Postgres...
+📊 Creating tables...
+🔍 Creating indexes...
+✅ Postgres migration complete!
+```
+
+### 2.3 Verificar no Supabase
+
+1. No Supabase, vá em **Table Editor**
+2. Você deve ver as tabelas:
+   - `products`
+   - `trends`
+   - `intent_clusters`
+   - `opportunities`
+   - `users`
+   - `user_projects`
+   - `saved_opportunities`
+
+---
+
+## 📋 Passo 3: Subir para GitHub
+
+```powershell
 # No diretório do projeto
+cd c:\Users\silas\.openclaw\workspace\market-radar
+
+# Inicializar Git (se ainda não iniciou)
 git init
 git add .
-git commit -m "Initial commit - Market Radar SaaS"
+git commit -m "Initial commit - Market Radar with Supabase"
 
-# Criar repositório no GitHub e conectar
-git remote add origin https://github.com/SEU_USUARIO/market-radar.git
+# Conectar ao GitHub
+git remote add origin https://github.com/SilasN33/market-radar.git
 git branch -M main
 git push -u origin main
 ```
 
-### 2. Configurar Vercel Postgres (Gratuito)
+Se der erro "src refspec main does not match", faça:
+```powershell
+git checkout -b main
+git push -u origin main
+```
+
+---
+
+## 📋 Passo 4: Deploy na Vercel
+
+### 4.1 Conectar Repositório
 
 1. Acesse https://vercel.com
 2. Faça login com GitHub
-3. Vá em **Storage** → **Create Database** → **Postgres**
-4. Nome: `market-radar-db`
-5. Região: Escolha a mais próxima (ex: `iad1` para US East)
-6. Copie a `DATABASE_URL` que será gerada
+3. Clique **Add New** → **Project**
+4. Selecione `market-radar`
+5. **NÃO clique Deploy ainda!**
 
-### 3. Deploy na Vercel
+### 4.2 Configurar Environment Variables
 
-#### Opção A: Via Interface Web (Mais Fácil)
+Ainda na tela de setup do projeto:
 
-1. No Vercel Dashboard, clique **Add New** → **Project**
-2. Importe seu repositório GitHub
-3. Configure:
-   - **Framework Preset**: Other
-   - **Root Directory**: `./`
-   - **Build Command**: (deixe vazio)
-   - **Output Directory**: `web`
+1. Vá em **Environment Variables**
+2. Adicione (use Add another para cada):
 
-4. **Environment Variables**:
-   ```
-   DATABASE_URL=<cole-a-url-do-postgres>
-   OPENAI_API_KEY=<sua-chave-openai>
-   FLASK_SECRET_KEY=<gere-uma-chave-segura>
-   ```
+```
+Name: DATABASE_URL
+Value: (cole sua connection string do Supabase)
 
-5. Clique **Deploy**
+Name: OPENAI_API_KEY
+Value: (sua chave OpenAI - sk-...)
 
-#### Opção B: Via CLI
-
-```bash
-# Instalar Vercel CLI
-npm install -g vercel
-
-# Login
-vercel login
-
-# Deploy
-vercel
-
-# Configurar environment variables
-vercel env add DATABASE_URL
-vercel env add OPENAI_API_KEY
-vercel env add FLASK_SECRET_KEY
+Name: FLASK_SECRET_KEY
+Value: (gere uma string aleatória - ex: mkt-radar-2026-secret-xyz)
 ```
 
-### 4. Migração do Banco de Dados
+### 4.3 Deploy!
 
-Como estamos usando Postgres agora, precisamos adaptar:
+1. Clique **Deploy**
+2. Aguarde ~2 minutos
+3. Pronto! Sua app está no ar 🎉
 
-```bash
-# Instalar psycopg2
-pip install psycopg2-binary
-
-# Criar tabelas no Postgres
-python scripts/migrate_to_postgres.py
-```
-
-O script `migrate_to_postgres.py` (criado abaixo) irá:
-- Conectar no Vercel Postgres
-- Criar todas as tabelas
-- Migrar dados do SQLite (se houver)
-
-### 5. Automatizar Pipeline com GitHub Actions
-
-O pipeline roda automaticamente a cada 6 horas via GitHub Actions (gratuito).
-
-Arquivo já criado: `.github/workflows/pipeline.yml`
-
-Adicione os **Secrets** no GitHub:
-1. Vá em **Settings** → **Secrets and variables** → **Actions**
-2. Adicione:
-   - `DATABASE_URL`
-   - `OPENAI_API_KEY`
+URL final: `https://market-radar.vercel.app`
 
 ---
 
-## 🎯 Estrutura Final
+## 📋 Passo 5: Configurar GitHub Actions (Pipeline)
+
+### 5.1 Adicionar Secrets no GitHub
+
+1. Vá para https://github.com/SilasN33/market-radar
+2. Clique **Settings** → **Secrets and variables** → **Actions**
+3. Clique **New repository secret**
+4. Adicione 2 secrets:
+
+**Secret 1:**
+- Name: `DATABASE_URL`
+- Value: (sua connection string do Supabase)
+
+**Secret 2:**
+- Name: `OPENAI_API_KEY`
+- Value: (sua chave OpenAI)
+
+### 5.2 Testar Pipeline Manualmente
+
+1. No GitHub, vá em **Actions**
+2. Selecione **Market Radar Pipeline**
+3. Clique **Run workflow** → **Run workflow**
+4. Aguarde ~5 minutos
+5. Verifique se ficou verde (✅)
+
+Se funcionar, o pipeline rodará automaticamente a cada 6 horas!
+
+---
+
+## 🎉 Resultado Final
+
+Você agora tem:
 
 ```
-Vercel (Gratuito)
-├── Frontend Estático → /web/*
-├── API Serverless → /api/*
-└── Postgres Database → Vercel Storage
-
-GitHub Actions (Gratuito)
-└── Pipeline a cada 6h → Alimenta DB
+┌─────────────────────────────────┐
+│   https://market-radar.vercel.app
+│                                 │
+│  - Landing Page (pública)       │
+│  - Dashboard (autenticado)      │
+│  - API REST (/api/*)            │
+└─────────────┬───────────────────┘
+              │
+              ↓
+┌─────────────────────────────────┐
+│      Supabase Postgres          │
+│  - 500 MB storage               │
+│  - Backups automáticos          │
+│  - Interface visual             │
+└─────────────────────────────────┘
+              ↑
+              │
+┌─────────────────────────────────┐
+│      GitHub Actions             │
+│  - Pipeline a cada 6h           │
+│  - Alimenta o banco             │
+└─────────────────────────────────┘
 ```
 
 ---
 
-## 💰 Custos (Tier Gratuito)
+## 💰 Custos: R$ 0/mês ✅
 
 | Serviço | Limite Gratuito | Suficiente? |
 |---------|-----------------|-------------|
-| **Vercel Hosting** | 100 GB bandwidth/mês | ✅ Sim |
-| **Vercel Functions** | 100 GB-hours/mês | ✅ Sim |
-| **Vercel Postgres** | 256 MB storage | ✅ Para MVP |
-| **GitHub Actions** | 2,000 minutos/mês | ✅ Sim (pipeline usa ~10min) |
-
-**Total: R$ 0/mês** 🎉
+| Vercel | 100 GB bandwidth | ✅ Sim |
+| Supabase | 500 MB DB | ✅ Sim |
+| GitHub Actions | 2,000 min/mês | ✅ Sim |
 
 ---
 
 ## 🔧 Troubleshooting
 
-### Erro: "Database connection failed"
-- Verifique se `DATABASE_URL` está nas env vars
-- Teste conexão localmente primeiro
+### Erro: "Connection refused" no Supabase
+- Verifique se a connection string está correta
+- Certifique-se de ter substituído `[YOUR-PASSWORD]`
 
-### Erro: "Function timeout"
-- Pipeline longo demovido → Use GitHub Actions
-- Funções serverless têm timeout de 10s (free tier)
+### Erro: "No module named psycopg2"
+```powershell
+pip install psycopg2-binary
+```
 
-### Erro: "Module not found"
-- Certifique-se que `requirements.txt` está completo
-- Vercel instala deps automaticamente
+### Pipeline falha no GitHub Actions
+- Verifique se os Secrets estão configurados
+- Veja os logs em **Actions** → clique no workflow → veja o erro
+
+### Dados não aparecem no dashboard
+1. Rode o pipeline manualmente no GitHub Actions
+2. Após 5 minutos, recarregue o dashboard
 
 ---
 
-## 🔄 Atualizações
+## 📊 Visualizar Dados no Supabase
 
-Qualquer `git push` para `main` triggers automatic redeploy:
+1. Acesse Supabase → **Table Editor**
+2. Selecione uma tabela (ex: `opportunities`)
+3. Veja todos registros em tempo real
+4. Pode editar/deletar manualmente se precisar
 
-```bash
-git add .
-git commit -m "Update feature X"
-git push origin main
-# Vercel deployed automaticamente em ~30s
+---
+
+## 🚀 Comandos Úteis
+
+```powershell
+# Testar localmente (com Supabase)
+$env:DATABASE_URL="sua-connection-string"
+python run_pipeline.py
+
+# Ver logs da Vercel
+vercel logs
+
+# Forçar novo deploy
+git commit --allow-empty -m "Force redeploy"
+git push
 ```
 
 ---
 
-## 📊 Monitoramento
+**Tudo 100% grátis e pronto para produção!** 🎉
 
-Acesse Vercel Dashboard → Seu Projeto:
-- **Analytics**: Tráfego, performance
-- **Logs**: Debug serverless functions
-- **Deployments**: Histórico de deploys
-
----
-
-## 🚀 URLs Finais
-
-Após deploy, você terá:
-```
-Landing: https://market-radar.vercel.app
-Dashboard: https://market-radar.vercel.app (com login)
-API: https://market-radar.vercel.app/api/*
-```
-
----
-
-## ⚡ Performance Esperada
-
-- **Landing Page**: ~200ms load
-- **Dashboard**: ~500ms load
-- **API calls**: ~300ms average
-- **Database queries**: ~50ms
-
-Tudo na edge network da Vercel (super rápido)! 🔥
+Qualquer dúvida em algum passo, me avise!

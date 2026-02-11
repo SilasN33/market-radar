@@ -21,7 +21,6 @@
     }
   ],
   "env": {
-    "FLASK_ENV": "production",
-    "DATABASE_URL": "postgresql://postgres:Bartolozord@33$@db.qjiwyqnvvmpizvfzbvid.supabase.co:5432/postgres"
+    "FLASK_ENV": "production"
   }
 }

@@ -1,0 +1,27 @@
+"""
+Simple migration helper - shows SQL to run in Supabase
+"""
+
+print("🚀 MIGRAÇÃO VIA SUPABASE WEB (Solução Alternativa)")
+print("=" * 70)
+print("\nComo o psycopg2 está com problema de DLL no Windows,")
+print("vamos fazer a migração direto na interface do Supabase:")
+print("\n📋 PASSO A PASSO:\n")
+print("1. Abra: https://supabase.com/dashboard")
+print("2. Selecione o projeto 'market-radar'")
+print("3. Vá em 'SQL Editor' (barra lateral esquerda)")
+print("4. Clique em 'New Query'")
+print("5. Abra o arquivo: scripts/supabase_migration.sql")
+print("6. Copie TODO o conteúdo SQL")
+print("7. Cole no SQL Editor do Supabase")
+print("8. Clique 'RUN' ou aperte Ctrl+Enter")
+print("\n✅ Pronto! As tabelas serão criadas.")
+print("\n📊 Para verificar:")
+print("   - Vá em 'Table Editor' no Supabase")
+print("   - Você deve ver 7 tabelas criadas")
+print("\n" + "=" * 70)
+print("\nDepois de criar as tabelas, você pode:")
+print("  - Fazer o push para GitHub")
+print("  - Deploy na Vercel")
+print("  - O sistema funcionará perfeitamente!")
+print("=" * 70)
