@@ -114,9 +114,22 @@ def init_db():
     
     # REQUIRED for ON CONFLICT(keyword) to work in Postgres
     try:
+        # 1. Clean duplicates first (keep latest)
+        cursor.execute("""
+            DELETE FROM opportunities 
+            WHERE id NOT IN (
+                SELECT MAX(id) 
+                FROM opportunities 
+                GROUP BY keyword
+            )
+        """)
+        conn.commit()
+        
+        # 2. Create Unique Index
         cursor.execute("CREATE UNIQUE INDEX IF NOT EXISTS idx_opportunities_keyword ON opportunities(keyword)")
         conn.commit()
-    except: 
+    except Exception as e:
+        print(f"[db_warn] Index migration failed: {e}")
         conn.rollback()
     
     # Add column if not exists (migration)
@@ -314,7 +327,9 @@ def save_opportunity(opp_data: Dict[str, Any], cluster_id: Optional[int] = None)
         conn.commit()
         return opp_id
     except Exception as e:
+        import traceback
         print(f"[db_error] Save opportunity failed: {e}")
+        traceback.print_exc() # Uncomment for deep debug
         return 0
     finally:
         conn.close()
