@@ -1,64 +1,61 @@
-"""Collect intent signals from multiple sources (Autocomplete, Trends)."""
+"""Collect intent signals directly from Market Trends (High Confidence)."""
 import json
 import requests
 import time
-import urllib.parse
-from datetime import datetime, timezone
+from datetime import datetime
 from pathlib import Path
-from typing import List, Dict
+from typing import List
 
-# Clean Architecture Imports
-from src.utils.keyword_utils import save_keywords, load_keywords
+from src.utils.keyword_utils import save_keywords
 
-# Path adjustment: src/services -> parents[2] root
+# Path adjustment
 DATA_DIR = Path(__file__).resolve().parents[2] / "data" / "raw"
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 
-TRENDS_SOURCES = {
-    "mercadolivre": "https://http2.mlstatic.com/resources/sites/MLB/autosuggest",
-    "google_trends": "https://trends.google.com/trends/api/dailytrends"
-}
+# Official ML Trends API (No Auth required for public trends)
+ML_TRENDS_API = "https://api.mercadolibre.com/sites/MLB/trends/search"
 
-def fetch_mercadolivre_autocomplete(seed_keyword: str) -> List[str]:
-    """Fetch autocomplete suggestions from ML API."""
-    url = f"{TRENDS_SOURCES['mercadolivre']}?q={urllib.parse.quote(seed_keyword)}&limit=6"
+def fetch_ml_trends(category: str = None) -> List[str]:
+    """Fetch top search trends from Mercado Livre."""
+    url = ML_TRENDS_API
+    if category:
+        url = f"{ML_TRENDS_API}/{category}"
+        
+    print(f"🔥 Fetching Market Trends from: {url}")
     try:
-        resp = requests.get(url, timeout=5)
+        resp = requests.get(url, timeout=10)
         if resp.status_code == 200:
-            data = resp.json()
-            return [item['q'] for item in data.get('suggested_queries', [])]
+            trends = resp.json()
+            # Trends is top-level listing or specific dict
+            if isinstance(trends, list):
+                return [t.get("keyword") for t in trends if t.get("keyword")]
         return []
-    except Exception:
+    except Exception as e:
+        print(f"❌ Error fetching trends: {e}")
         return []
-
-def collect_signals(seed_list: List[str]) -> List[str]:
-    """Expand seeds into long-tail intent keywords."""
-    all_signals = set()
-    print(f"📡 Capturing signals for {len(seed_list)} seeds...")
-    
-    for seed in seed_list:
-        start_t = time.time()
-        suggestions = fetch_mercadolivre_autocomplete(seed)
-        all_signals.update(suggestions)
-        
-        # Recursive breadth (1 level deep)
-        for sub in suggestions[:2]:
-            sub_suggestions = fetch_mercadolivre_autocomplete(sub)
-            all_signals.update(sub_suggestions)
-            time.sleep(0.2)
-            
-        print(f"   Refined '{seed}': {len(suggestions)} signals ({time.time()-start_t:.2f}s)")
-        
-    return list(all_signals)
 
 def main():
-    # Load fallback if no dynamic seeds
-    seeds, source = load_keywords(preferred_sources=("fallback_manual",), return_rich_objects=False)
+    print("🚀 signal_collector: Switching to DIRECT TRENDS mode...")
     
-    signals = collect_signals(seeds)
-    print(f"✅ Total Signals Captured: {len(signals)}")
+    # 1. Get General Trends (The hottest items right now)
+    general_trends = fetch_ml_trends()
+    print(f"✅ Captured {len(general_trends)} 'Hot' Trends (General)")
     
-    save_keywords(signals, source="mercadolivre_autocomplete", prefix="intent_signals")
+    # 2. (Optional) Get Category Trends for 'Eletrônicos, Áudio e Vídeo' (MLB1000)
+    # This adds niche specificity
+    tech_trends = fetch_ml_trends("MLB1000") 
+    print(f"✅ Captured {len(tech_trends)} Tech Trends")
+    
+    # Combine & Dedup
+    all_signals = list(set(general_trends + tech_trends))
+    
+    # Slice to avoid API limits downstream (Top 40 is plenty for a run)
+    limited_signals = all_signals[:40]
+    
+    print(f"💾 Saving {len(limited_signals)} High-Velocity Signals for Processing...")
+    
+    # Save as 'mercadolivre_trends' so keyword_utils picks it up with priority
+    save_keywords(limited_signals, source="mercadolivre_trends", prefix="intent_signals")
 
 if __name__ == "__main__":
     main()
