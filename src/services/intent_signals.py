@@ -97,11 +97,23 @@ def scrape_real_signals() -> List[str]:
     # Remove nonsense, too short, or duplicates
     clean_signals = []
     seen = set()
+    
+    stop_words = ["para", "com", "de", "da", "do", "em", "kit", "mini"]
+    
     for s in signals:
         s = s.strip()
-        if len(s) < 4 or len(s) > 100: continue
-        if "frete" in s.lower() or "envio" in s.lower(): continue
+        if len(s) < 4: continue
         
+        # Smart Truncate: Keep only first 4-5 significant words
+        # "Carregador Turbo Duplo 40w Usb Tipo C..." -> "Carregador Turbo Duplo 40w"
+        words = s.split()
+        if len(words) > 5:
+            # Take first 5 words, but remove trailing stop words
+            short_s = " ".join(words[:5])
+            if short_s.split()[-1].lower() in stop_words:
+                short_s = " ".join(words[:4])
+            s = short_s
+            
         # Normalize simple keys to dedup
         key = s.lower()
         if key not in seen:

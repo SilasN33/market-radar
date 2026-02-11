@@ -323,7 +323,19 @@ def save_opportunity(opp_data: Dict[str, Any], cluster_id: Optional[int] = None)
             datetime.now(),
             datetime.now()
         ))
-        opp_id = cursor.fetchone()[0]
+        row = cursor.fetchone()
+        if row:
+            opp_id = row[0] if isinstance(row, tuple) else row['id']
+        else:
+            # Fallback: INSERT failed to return, try SELECT
+            cursor.execute("SELECT id FROM opportunities WHERE keyword = ?", (opp_data.get("keyword"),))
+            select_row = cursor.fetchone()
+            if select_row:
+                 opp_id = select_row[0] if isinstance(select_row, tuple) else select_row['id']
+            else:
+                 # Should not happen after insert
+                 print(f"[db_error] Could not retrieve ID for {opp_data.get('keyword')}")
+                 return 0
         conn.commit()
         return opp_id
     except Exception as e:
