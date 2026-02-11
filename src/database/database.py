@@ -116,10 +116,15 @@ def init_db():
     # Add column if not exists (migration)
     try:
         cursor.execute("ALTER TABLE opportunities ADD COLUMN scoring_breakdown TEXT")
-    except: pass
+        conn.commit()
+    except: 
+        conn.rollback()
+        
     try:
         cursor.execute("ALTER TABLE opportunities ADD COLUMN last_updated DATETIME")
-    except: pass
+        conn.commit()
+    except: 
+        conn.rollback()
 
     # 6. Users
     cursor.execute("""
