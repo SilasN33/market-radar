@@ -102,7 +102,7 @@ def step_2_process_ranking(clusters, ml_data, amazon_data, max_items=50):
                 "signals": {
                     "v2_score": score_result["score"],
                     "v2_breakdown": score_result["breakdown"],
-                    "signal_diversity_count": source_result["breakdown"]["IndiceSinalMultiplasFontes"] * 10 # Proxy
+                    "signal_diversity_count": score_result["breakdown"]["IndiceSinalMultiplasFontes"] * 10 # Proxy
                 },
                 "meta": meta,
                 "scoring_breakdown": score_result["breakdown"], # JSON for DB
