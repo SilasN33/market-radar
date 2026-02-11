@@ -108,10 +108,16 @@ def init_db():
         scoring_breakdown TEXT, -- JSON V2 Breakdown
         created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
         last_updated DATETIME DEFAULT CURRENT_TIMESTAMP,
-        FOREIGN KEY(cluster_id) REFERENCES intent_clusters(id),
-        UNIQUE(keyword)
+        FOREIGN KEY(cluster_id) REFERENCES intent_clusters(id)
     )
     """)
+    
+    # REQUIRED for ON CONFLICT(keyword) to work in Postgres
+    try:
+        cursor.execute("CREATE UNIQUE INDEX IF NOT EXISTS idx_opportunities_keyword ON opportunities(keyword)")
+        conn.commit()
+    except: 
+        conn.rollback()
     
     # Add column if not exists (migration)
     try:
