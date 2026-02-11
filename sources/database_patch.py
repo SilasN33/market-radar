@@ -1,13 +1,19 @@
 """
 Patch for database.py to support Postgres in production
 Import this BEFORE importing database module
+
+IMPORTANT: For Vercel + Supabase deployments:
+- Use DATABASE_URL (connection pooler, port 6543) for best compatibility
+- The pooler is IPv4 compatible and designed for serverless environments
+- If using direct connection (port 5432), it may fail with IPv6 issues on Vercel
 """
 import os
 import sys
 from urllib.parse import urlparse, unquote
 
 # Check if we're in production (Vercel)
-DATABASE_URL = os.getenv('DATABASE_URL')
+# Prefer DATABASE_URL (pooler) over POSTGRES_URL_NON_POOLING (direct connection)
+DATABASE_URL = os.getenv('DATABASE_URL') or os.getenv('POSTGRES_URL')
 IS_POSTGRES = DATABASE_URL and 'postgres' in DATABASE_URL
 
 if IS_POSTGRES:
@@ -20,25 +26,76 @@ if IS_POSTGRES:
     parsed = urlparse(DATABASE_URL)
     
     # Build connection parameters safely
+    # For serverless environments like Vercel, we need specific settings
     conn_params = {
         'host': parsed.hostname,
         'port': parsed.port or 5432,
         'database': parsed.path.lstrip('/'),
         'user': unquote(parsed.username) if parsed.username else None,
         'password': unquote(parsed.password) if parsed.password else None,
-        'sslmode': 'require'
+        'sslmode': 'require',
+        # Serverless-friendly settings
+        'connect_timeout': 10,  # Timeout after 10 seconds
+        'keepalives': 1,
+        'keepalives_idle': 30,
+        'keepalives_interval': 10,
+        'keepalives_count': 5,
     }
+    
+    # Detect if using connection pooler (recommended for Vercel)
+    is_pooler = parsed.port == 6543 or '.pooler.' in (parsed.hostname or '')
     
     # Monkey patch sqlite3.connect to use Postgres instead
     original_connect = sqlite3.connect
     
+    class PostgresCursor:
+        """Wrapper around psycopg2 cursor that converts SQLite placeholders (?) to PostgreSQL (%s)"""
+        def __init__(self, cursor):
+            self._cursor = cursor
+            
+        def execute(self, query, params=None):
+            # Convert SQLite placeholders (?) to PostgreSQL (%s)
+            if query and '?' in query:
+                query = query.replace('?', '%s')
+            return self._cursor.execute(query, params)
+        
+        def executemany(self, query, params_seq):
+            if query and '?' in query:
+                query = query.replace('?', '%s')
+            return self._cursor.executemany(query, params_seq)
+        
+        def fetchone(self):
+            return self._cursor.fetchone()
+        
+        def fetchall(self):
+            return self._cursor.fetchall()
+        
+        def fetchmany(self, size=None):
+            return self._cursor.fetchmany(size)
+        
+        def __iter__(self):
+            return iter(self._cursor)
+        
+        def __getattr__(self, name):
+            # Proxy all other attributes to the underlying cursor
+            return getattr(self._cursor, name)
+    
     class PostgresConnection:
         def __init__(self):
-            self.conn = psycopg2.connect(**conn_params)
-            self.row_factory = None
+            try:
+                self.conn = psycopg2.connect(**conn_params)
+                self.row_factory = None
+            except Exception as e:
+                print(f"[database_patch] ❌ Failed to connect to Postgres: {e}")
+                print(f"[database_patch] Host: {conn_params['host']}, Port: {conn_params['port']}")
+                if not is_pooler:
+                    print("[database_patch] ⚠️ Using direct connection (port 5432) - Consider using Supabase Connection Pooler (port 6543) for better Vercel compatibility")
+                raise
             
         def cursor(self):
-            return self.conn.cursor(cursor_factory=RealDictCursor)
+            # Return wrapped cursor that converts ? to %s
+            pg_cursor = self.conn.cursor(cursor_factory=RealDictCursor)
+            return PostgresCursor(pg_cursor)
         
         def commit(self):
             self.conn.commit()
@@ -60,6 +117,8 @@ if IS_POSTGRES:
     import sqlite3
     sqlite3.connect = postgres_connect
     
-    print(f"[database_patch] ✅ Using Postgres (Supabase) - Host: {conn_params['host']}")
+    connection_type = "Pooler (IPv4)" if is_pooler else "Direct (may use IPv6)"
+    print(f"[database_patch] ✅ Using Postgres (Supabase) - Host: {conn_params['host']}:{conn_params['port']} [{connection_type}]")
 else:
     print("[database_patch] ℹ️  Using SQLite (local development)")
+
