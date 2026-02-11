@@ -6,6 +6,9 @@ from pathlib import Path
 
 # Add parent directory to path for imports
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
+# IMPORTANT: Import patch BEFORE database to enable Postgres
+from sources import database_patch
 from sources import database
 
 auth_bp = Blueprint('auth', __name__)

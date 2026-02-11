@@ -13,6 +13,9 @@ import requests
 from bs4 import BeautifulSoup
 
 from keyword_utils import load_keywords
+
+# IMPORTANT: Import patch BEFORE database to enable Postgres
+import database_patch
 import database
 
 DATA_DIR = Path(__file__).resolve().parents[1] / "data" / "raw"
