@@ -10,9 +10,11 @@ werkzeug>=3.1
 
 # Data processing & scraping
 beautifulsoup4==4.12.3
+playwright>=1.41.0
+playwright-stealth>=1.0.6
 
 # Database (Postgres for production, SQLite for local)
-psycopg2-binary==2.9.9
+psycopg2-binary>=2.9.9
 
 # Note: Using only pure Python packages to avoid C++ compilation requirements
 # xml.etree.ElementTree (built-in) is used for XML parsing
