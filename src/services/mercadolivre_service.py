@@ -13,7 +13,6 @@ from pathlib import Path
 from typing import List, Dict, Any, Optional
 
 from playwright.async_api import async_playwright, Page, BrowserContext
-from playwright_stealth import stealth_async
 
 # Local imports
 from src.utils.keyword_utils import load_keywords
@@ -80,10 +79,26 @@ class MercadoLivreService:
             permissions=["geolocation"],
         )
         
-        # Apply stealth scripts
-        page = await context.new_page()
-        await stealth_async(page)
-        await page.close()
+        # Apply stealth scripts manually
+        await context.add_init_script("""
+            // Override navigator.webdriver
+            Object.defineProperty(navigator, 'webdriver', {
+                get: () => undefined
+            });
+            
+            // Override Chrome detection
+            window.chrome = {
+                runtime: {}
+            };
+            
+            // Override permissions
+            const originalQuery = window.navigator.permissions.query;
+            window.navigator.permissions.query = (parameters) => (
+                parameters.name === 'notifications' ?
+                    Promise.resolve({ state: Notification.permission }) :
+                    originalQuery(parameters)
+            );
+        """)
         
         return context
 

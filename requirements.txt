@@ -11,7 +11,6 @@ werkzeug>=3.1
 # Data processing & scraping
 beautifulsoup4==4.12.3
 playwright>=1.41.0
-playwright-stealth>=1.0.6
 
 # Database (Postgres for production, SQLite for local)
 psycopg2-binary>=2.9.9
