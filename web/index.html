@@ -34,6 +34,66 @@
             </div>
         </header>
 
+        <!-- Hero Section Interativa -->
+        <section class="hero-dashboard">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i data-lucide="zap" size="14"></i>
+                    <span>Atualizado em tempo real</span>
+                </div>
+                <h1 class="hero-title">
+                    Oportunidades de <span class="gradient-text">Alta Velocidade</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Detectamos micro-nichos emergentes antes da concorrência usando sinais de intenção real de compra
+                </p>
+
+                <!-- Animated Stats Pills -->
+                <div class="stats-pills">
+                    <div class="stat-pill">
+                        <i data-lucide="trending-up" size="16"></i>
+                        <span id="live-signals">Carregando...</span>
+                        <span class="stat-label">sinais hoje</span>
+                    </div>
+                    <div class="stat-pill">
+                        <i data-lucide="target" size="16"></i>
+                        <span id="live-opportunities">--</span>
+                        <span class="stat-label">oportunidades ativas</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Animated Background Particles (SVG) -->
+            <svg class="hero-particles" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400">
+                <defs>
+                    <linearGradient id="particleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:0.3" />
+                        <stop offset="100%" style="stop-color:#ec4899;stop-opacity:0.1" />
+                    </linearGradient>
+                </defs>
+                <circle class="particle" cx="100" cy="50" r="3" fill="url(#particleGradient)">
+                    <animate attributeName="cy" values="50;350;50" dur="15s" repeatCount="indefinite" />
+                    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="15s" repeatCount="indefinite" />
+                </circle>
+                <circle class="particle" cx="300" cy="100" r="2" fill="url(#particleGradient)">
+                    <animate attributeName="cy" values="100;300;100" dur="20s" repeatCount="indefinite" />
+                    <animate attributeName="opacity" values="0.2;0.6;0.2" dur="20s" repeatCount="indefinite" />
+                </circle>
+                <circle class="particle" cx="600" cy="80" r="4" fill="url(#particleGradient)">
+                    <animate attributeName="cy" values="80;320;80" dur="18s" repeatCount="indefinite" />
+                    <animate attributeName="opacity" values="0.4;0.9;0.4" dur="18s" repeatCount="indefinite" />
+                </circle>
+                <circle class="particle" cx="900" cy="120" r="2.5" fill="url(#particleGradient)">
+                    <animate attributeName="cy" values="120;280;120" dur="22s" repeatCount="indefinite" />
+                    <animate attributeName="opacity" values="0.3;0.7;0.3" dur="22s" repeatCount="indefinite" />
+                </circle>
+                <circle class="particle" cx="1100" cy="60" r="3" fill="url(#particleGradient)">
+                    <animate attributeName="cy" values="60;340;60" dur="17s" repeatCount="indefinite" />
+                    <animate attributeName="opacity" values="0.2;0.8;0.2" dur="17s" repeatCount="indefinite" />
+                </circle>
+            </svg>
+        </section>
+
         <!-- Stats Overview (Optional, maybe remove later) -->
         <!-- <div class="stats-row" style="margin-bottom: 2rem; display: flex; gap: 1rem; overflow-x: auto;"> -->
         <!-- Stats cards here if needed -->
@@ -41,9 +101,6 @@
 
         <!-- Main Content -->
         <main>
-            <h2 style="margin-bottom: 1.5rem; font-weight: 700; font-size: 1.5rem;">Oportunidades de Alta Velocidade 🚀
-            </h2>
-
             <!-- Grid Dynamic Content -->
             <div id="opportunities-grid" class="opportunities-grid">
                 <!-- SKELETON LOADERS -->

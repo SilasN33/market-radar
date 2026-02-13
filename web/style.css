@@ -1,37 +1,46 @@
-/* Market Radar Premium SaaS Theme - V2 */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+/* Market Radar Premium Fintech Theme - V3 */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
-    /* Brand Colors */
-    --primary: #6366f1;
-    /* Indigo 500 */
-    --primary-glow: rgba(99, 102, 241, 0.4);
-    --secondary: #ec4899;
-    /* Pink 500 */
-    --accent: #8b5cf6;
-    /* Violet 500 */
+    /* Premium Fintech Brand Colors */
+    --primary-purple: #8b5cf6;
+    /* Roxo Neon - Cor principal da logo */
+    --primary-purple-glow: rgba(139, 92, 246, 0.6);
+    --secondary-pink: #ec4899;
+    --accent-violet: #a78bfa;
+    --neon-green: #22c55e;
+    /* Verde Fluorescente para lucros */
+    --neon-green-glow: rgba(34, 197, 94, 0.5);
 
     /* Semantic Colors */
-    --success: #10b981;
-    --warning: #f59e0b;
+    --success: var(--neon-green);
+    --warning: #fbbf24;
     --danger: #ef4444;
-    --info: #3b82f6;
+    --info: #06b6d4;
 
-    /* Backgrounds */
-    --bg-dark: #0f172a;
-    /* Slate 900 */
-    --bg-card: rgba(30, 41, 59, 0.7);
-    /* Slate 800 with opacity */
-    --bg-card-hover: rgba(30, 41, 59, 0.9);
+    /* Dark Mode Profundo */
+    --bg-black: #000000;
+    --bg-slate-900: #0f172a;
+    --bg-slate-800: #1e293b;
+    --bg-card: rgba(15, 23, 42, 0.6);
+    /* Glassmorphism base */
+    --bg-card-hover: rgba(15, 23, 42, 0.85);
 
     /* Text */
     --text-main: #f8fafc;
     --text-muted: #94a3b8;
+    --text-dim: #64748b;
 
-    /* Effects */
-    --glass-border: 1px solid rgba(255, 255, 255, 0.08);
-    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
-    --backdrop-blur: blur(12px);
+    /* Glassmorphism Effects */
+    --glass-border: 1px solid rgba(139, 92, 246, 0.15);
+    --glass-border-hover: 1px solid rgba(139, 92, 246, 0.4);
+    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+    --glass-shadow-hover: 0 20px 60px 0 rgba(139, 92, 246, 0.3);
+    --backdrop-blur: blur(16px);
+
+    /* 3D Transform Perspective */
+    --perspective: 1000px;
+    --tilt-max: 15deg;
 }
 
 * {
@@ -41,15 +50,30 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
-    background-color: var(--bg-dark);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--bg-slate-900);
     color: var(--text-main);
     min-height: 100vh;
     overflow-x: hidden;
-    /* Deep animated gradient background */
+    position: relative;
+
+    /* Animated Mesh Gradient Background */
     background-image:
-        radial-gradient(circle at 10% 20%, rgba(99, 102, 241, 0.15) 0%, transparent 40%),
-        radial-gradient(circle at 90% 80%, rgba(236, 72, 153, 0.15) 0%, transparent 40%);
+        radial-gradient(circle at 15% 25%, rgba(139, 92, 246, 0.12) 0%, transparent 50%),
+        radial-gradient(circle at 85% 75%, rgba(236, 72, 153, 0.10) 0%, transparent 50%),
+        radial-gradient(circle at 50% 50%, rgba(34, 197, 94, 0.05) 0%, transparent 60%);
+    background-size: 100% 100%;
+    animation: meshMove 20s ease-in-out infinite alternate;
+}
+
+@keyframes meshMove {
+    0% {
+        background-position: 0% 0%, 100% 100%, 50% 50%;
+    }
+
+    100% {
+        background-position: 10% 10%, 90% 90%, 60% 40%;
+    }
 }
 
 /* --- Layout --- */
@@ -67,17 +91,22 @@ header {
     justify-content: space-between;
     align-items: center;
     padding-bottom: 2rem;
-    margin-bottom: 1rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    margin-bottom: 2rem;
+    border-bottom: 1px solid rgba(139, 92, 246, 0.1);
 }
 
 .brand {
-    font-size: 1.5rem;
-    font-weight: 800;
-    background: linear-gradient(135deg, #fff 0%, #cbd5e1 100%);
+    font-family: 'Space Grotesk', 'Inter', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--primary-purple) 0%, var(--secondary-pink) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    letter-spacing: -0.02em;
+    background-clip: text;
+    letter-spacing: -0.03em;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .user-profile {
@@ -86,11 +115,170 @@ header {
     gap: 0.75rem;
     font-size: 0.9rem;
     color: var(--text-muted);
-    background: rgba(255, 255, 255, 0.03);
-    padding: 0.5rem 1rem;
+    background: rgba(15, 23, 42, 0.5);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 0.6rem 1.2rem;
     border-radius: 2rem;
     border: var(--glass-border);
+    transition: all 0.3s ease;
 }
+
+.user-profile:hover {
+    background: rgba(15, 23, 42, 0.7);
+    border-color: rgba(139, 92, 246, 0.3);
+}
+
+/* --- Hero Dashboard Section --- */
+.hero-dashboard {
+    position: relative;
+    margin-bottom: 3rem;
+    padding: 3rem 2rem;
+    background: linear-gradient(135deg,
+            rgba(139, 92, 246, 0.08) 0%,
+            rgba(236, 72, 153, 0.05) 50%,
+            rgba(34, 197, 94, 0.03) 100%);
+    border-radius: 2rem;
+    border: var(--glass-border);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: rgba(139, 92, 246, 0.15);
+    border: 1px solid rgba(139, 92, 246, 0.3);
+    border-radius: 2rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--accent-violet);
+    margin-bottom: 1.5rem;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+.hero-title {
+    font-family: 'Space Grotesk', 'Inter', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: var(--text-main);
+    letter-spacing: -0.02em;
+}
+
+.gradient-text {
+    background: linear-gradient(135deg, var(--primary-purple) 0%, var(--secondary-pink) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+}
+
+.hero-subtitle {
+    font-size: 1.15rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.stats-pills {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.stat-pill {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(139, 92, 246, 0.2);
+    border-radius: 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-main);
+    transition: all 0.3s ease;
+}
+
+.stat-pill:hover {
+    transform: translateY(-2px);
+    border-color: rgba(139, 92, 246, 0.4);
+    box-shadow: 0 8px 20px rgba(139, 92, 246, 0.2);
+}
+
+.stat-pill i {
+    color: var(--primary-purple);
+}
+
+.stat-label {
+    color: var(--text-dim);
+    font-weight: 400;
+    font-size: 0.85rem;
+}
+
+.hero-particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Responsive Hero */
+@media (max-width: 768px) {
+    .hero-dashboard {
+        padding: 2rem 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .stats-pills {
+        flex-direction: column;
+    }
+}
+
 
 /* --- Opportunity Cards Grid --- */
 .opportunities-grid {
@@ -110,25 +298,76 @@ header {
     }
 }
 
-/* --- SaaS Card Component --- */
+/* --- SaaS Card Component com Tilt 3D --- */
 .opp-card {
     background: var(--bg-card);
     backdrop-filter: var(--backdrop-blur);
+    -webkit-backdrop-filter: var(--backdrop-blur);
     border: var(--glass-border);
-    border-radius: 1.25rem;
-    padding: 1.5rem;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 1.5rem;
+    padding: 1.75rem;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--glass-shadow);
+
+    /* 3D Transform Setup */
+    transform-style: preserve-3d;
+    perspective: var(--perspective);
+    will-change: transform;
+}
+
+/* Glow Border Effect (Hidden by default) */
+.opp-card::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(135deg,
+            var(--primary-purple),
+            var(--secondary-pink),
+            var(--neon-green));
+    border-radius: 1.5rem;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.4s ease;
+    filter: blur(8px);
+}
+
+/* Glassmorphism Shine Effect */
+.opp-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,
+            transparent,
+            rgba(255, 255, 255, 0.1),
+            transparent);
+    transition: left 0.6s ease;
 }
 
 .opp-card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--glass-shadow);
     background: var(--bg-card-hover);
-    border-color: rgba(99, 102, 241, 0.3);
+    border: var(--glass-border-hover);
+    box-shadow: var(--glass-shadow-hover);
+    /* Subtle lift - 3D tilt será aplicado via JS */
+    transform: translateY(-8px);
 }
+
+.opp-card:hover::before {
+    opacity: 1;
+}
+
+.opp-card:hover::after {
+    left: 100%;
+}
+
+
 
 /* Card Header: Score & Badge */
 .card-header {
@@ -160,17 +399,18 @@ header {
 
 /* Dynamic Score Colors */
 .score-high {
-    color: var(--success);
-    text-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+    color: var(--neon-green);
+    text-shadow: 0 0 24px var(--neon-green-glow);
 }
 
 .score-med {
     color: var(--warning);
-    text-shadow: 0 0 20px rgba(245, 158, 11, 0.3);
+    text-shadow: 0 0 20px rgba(251, 191, 36, 0.4);
 }
 
 .score-low {
-    color: var(--danger);
+    color: var(--text-muted);
+    text-shadow: none;
 }
 
 .trend-badge {
@@ -214,6 +454,7 @@ header {
     /* Limit lines */
     display: -webkit-box;
     -webkit-line-clamp: 2;
+    line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
@@ -298,9 +539,9 @@ header {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+    background: linear-gradient(135deg, var(--primary-purple) 0%, var(--accent-violet) 100%);
     color: white;
-    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+    box-shadow: 0 4px 16px var(--primary-purple-glow);
 }
 
 .btn-primary:hover {

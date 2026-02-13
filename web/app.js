@@ -44,8 +44,13 @@ function renderGrid(opportunities) {
 
     if (!opportunities.length) {
         grid.innerHTML = `<div style="text-align: center; color: var(--text-muted); padding: 3rem;">Nenhuma oportunidade encontrada ainda. O radar está escaneando...</div>`;
+        updateHeroStats(0, 0);
         return;
     }
+
+    // Update Hero Stats with animated counter
+    const totalSignals = opportunities.reduce((sum, opp) => sum + (opp.signal_count || 1), 0);
+    updateHeroStats(totalSignals, opportunities.length);
 
     opportunities.forEach((opp, index) => {
         // Prepare V2 Metrics
@@ -162,8 +167,107 @@ function renderGrid(opportunities) {
 
     // Re-init icons for dynamic content
     lucide.createIcons();
+
+    // Initialize 3D Tilt Effect
+    initTiltEffect();
+}
+
+/**
+ * Vanilla JS 3D Tilt Effect (Lightweight, no dependencies)
+ * Aplica rotação 3D sutil nos cards baseado na posição do mouse
+ */
+function initTiltEffect() {
+    const cards = document.querySelectorAll('.opp-card');
+
+    cards.forEach(card => {
+        card.addEventListener('mousemove', handleTilt);
+        card.addEventListener('mouseleave', resetTilt);
+    });
+}
+
+function handleTilt(e) {
+    const card = e.currentTarget;
+    const rect = card.getBoundingClientRect();
+
+    // Calcular posição do mouse relativa ao centro do card (0 a 1)
+    const x = (e.clientX - rect.left) / rect.width;
+    const y = (e.clientY - rect.top) / rect.height;
+
+    // Converter para graus de rotação (-15deg a +15deg)
+    const tiltX = (y - 0.5) * -20; // Inverte Y para efeito natural
+    const tiltY = (x - 0.5) * 20;
+
+    // Aplicar transform com suavidade
+    card.style.transform = `
+        translateY(-8px) 
+        perspective(1000px) 
+        rotateX(${tiltX}deg) 
+        rotateY(${tiltY}deg)
+        scale3d(1.02, 1.02, 1.02)
+    `;
+
+    // Adicionar brilho sutil que segue o mouse
+    const glowX = x * 100;
+    const glowY = y * 100;
+    card.style.background = `
+        radial-gradient(circle at ${glowX}% ${glowY}%, 
+            rgba(139, 92, 246, 0.15), 
+            transparent 50%),
+        var(--bg-card-hover)
+    `;
+}
+
+function resetTilt(e) {
+    const card = e.currentTarget;
+
+    // Reset suave para posição original
+    card.style.transform = 'translateY(-8px) perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';
+    card.style.background = '';
+
+    // Após a transição, remove o translateY para evitar conflito com hover CSS
+    setTimeout(() => {
+        if (!card.matches(':hover')) {
+            card.style.transform = '';
+        }
+    }, 400);
 }
 
 function analyzeDetails(id) {
     alert("Funcionalidade 'Deep Dive Analysis' disponível em breve no plano Pro!");
+}
+
+/**
+ * Update Hero Section Stats with Animated Counter
+ */
+function updateHeroStats(signals, opportunities) {
+    const signalsEl = document.getElementById('live-signals');
+    const oppsEl = document.getElementById('live-opportunities');
+
+    if (!signalsEl || !oppsEl) return;
+
+    // Animated counter effect
+    animateCounter(signalsEl, 0, signals, 1500);
+    animateCounter(oppsEl, 0, opportunities, 1200);
+}
+
+function animateCounter(element, start, end, duration) {
+    const startTime = performance.now();
+    const range = end - start;
+
+    function update(currentTime) {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+
+        // Easing function (easeOutCubic)
+        const easeProgress = 1 - Math.pow(1 - progress, 3);
+        const current = Math.floor(start + (range * easeProgress));
+
+        element.textContent = current.toLocaleString('pt-BR');
+
+        if (progress < 1) {
+            requestAnimationFrame(update);
+        }
+    }
+
+    requestAnimationFrame(update);
 }
