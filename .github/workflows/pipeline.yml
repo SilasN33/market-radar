@@ -26,10 +26,6 @@ jobs:
           pip install -r requirements.txt
           pip install psycopg2-binary
       
-      - name: Install Playwright and browsers with dependencies
-        run: |
-          playwright install --with-deps chromium
-      
       - name: Run Intent Signals V2
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
@@ -42,9 +38,12 @@ jobs:
         run: python -m src.services.ai_processor
         continue-on-error: true
       
-      - name: Run Mercado Livre Scraper V2 (Playwright)
+      - name: Run Mercado Livre Collection (Official API)
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          ML_CLIENT_ID: ${{ secrets.ML_CLIENT_ID }}
+          ML_CLIENT_SECRET: ${{ secrets.ML_CLIENT_SECRET }}
+          ML_REFRESH_TOKEN: ${{ secrets.ML_REFRESH_TOKEN }}
         run: python -m src.services.mercadolivre_service --max-keywords 25 --products-per-keyword 6
       
       - name: Run Orchestrator V2 (Scoring & Ranking)
