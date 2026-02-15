@@ -64,18 +64,12 @@ Mode: V2 SCORING (Velocity + Gap + Quality)
             "desc": "🧠 Analisando Sinais e Construindo Clusters de Intenção"
         },
         
-        # 3. VALIDATE MARKET (Scraping V2 - Capturing Reviews & Seller)
+        # 3. COLLECT CURATED PRODUCTS (Official API)
         {
             "module": "src.services.mercadolivre_service",
-            "args": ["--max-keywords", "25", "--products-per-keyword", "6"],
-            "desc": "🛍️ Validando Produtos no Mercado Livre (Deep Validation)"
+            "args": [],
+            "desc": "📦 Coletando Produtos Curados (Official API)"
         },
-        #{
-        #    "module": "src.scrapers.amazon",
-        #    "args": ["--max-keywords", "25", "--products-per-keyword", "6"],
-        #    "desc": "🛒 Validando Produtos na Amazon BR",
-        #    "optional": True,
-        #},
         
         # 4. V2 ORCHESTRATION (Snapshot -> Scoring -> Persistence)
         {
