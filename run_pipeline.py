@@ -52,26 +52,14 @@ Mode: V2 SCORING (Velocity + Gap + Quality)
 """)
     
     steps = [
-        # 1. ACQUIRE SIGNALS
-        {
-            "module": "src.services.intent_signals",
-            "desc": "📡 Coletando Sinais de Intenção (Autocomplete + Trends)"
-        },
-        
-        # 2. ANALYZE SIGNALS (AI)
-        {
-            "module": "src.services.ai_processor",
-            "desc": "🧠 Analisando Sinais e Construindo Clusters de Intenção"
-        },
-        
-        # 3. COLLECT CURATED PRODUCTS (Official API)
+        # 1. COLLECT CURATED PRODUCTS (Official API)
         {
             "module": "src.services.mercadolivre_service",
             "args": [],
             "desc": "📦 Coletando Produtos Curados (Official API)"
         },
         
-        # 4. V2 ORCHESTRATION (Snapshot -> Scoring -> Persistence)
+        # 2. V2 ORCHESTRATION (Snapshot -> Scoring -> Persistence)
         {
             "module": "src.services.pipeline_v2",
             "desc": "🏆 Executando Motor de Scoring V2 (Velocidade, Lacuna, Qualidade)"

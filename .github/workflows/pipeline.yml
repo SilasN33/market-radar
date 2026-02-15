@@ -29,25 +29,13 @@ jobs:
       - name: Verify Dependencies
         run: python tests/test_dependencies.py
       
-      - name: Run Intent Signals V2
-        env:
-          DATABASE_URL: ${{ secrets.DATABASE_URL }}
-        run: python -m src.services.intent_signals
-      
-      - name: Run AI Processor V2
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          DATABASE_URL: ${{ secrets.DATABASE_URL }}
-        run: python -m src.services.ai_processor
-        continue-on-error: true
-      
-      - name: Run Mercado Livre Collection (Official API)
+      - name: Run Mercado Livre Collection (Curated List)
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
           ML_CLIENT_ID: ${{ secrets.ML_CLIENT_ID }}
           ML_CLIENT_SECRET: ${{ secrets.ML_CLIENT_SECRET }}
           ML_REFRESH_TOKEN: ${{ secrets.ML_REFRESH_TOKEN }}
-        run: python -m src.services.mercadolivre_service --max-keywords 25 --products-per-keyword 6
+        run: python -m src.services.mercadolivre_service
       
       - name: Run Orchestrator V2 (Scoring & Ranking)
         env:
