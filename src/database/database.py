@@ -196,6 +196,15 @@ def init_db():
     ''')
     cursor.execute("CREATE INDEX IF NOT EXISTS idx_history_term_time ON search_term_history(term, captured_at)")
     
+    # 9. System Configs (For persistent tokens)
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS system_configs (
+        key TEXT PRIMARY KEY,
+        value TEXT,
+        updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
+    )
+    """)
+
     conn.commit()
     conn.close()
     print(f"[database] ✅ Banco de dados inicializado em: {DB_PATH}")
@@ -511,6 +520,42 @@ def get_term_history(term: str, metric_type: str = "occurrence_rank", limit: int
         return [dict(row) for row in cursor.fetchall()]
     except: return []
     finally: conn.close()
+
+# --- SYSTEM CONFIGS (TOKEN PERSISTENCE) ---
+
+def get_config(key: str) -> Optional[str]:
+    conn = get_connection()
+    try:
+        cursor = conn.cursor()
+        # Ensure table (lazy init for existing DBs)
+        cursor.execute("CREATE TABLE IF NOT EXISTS system_configs (key TEXT PRIMARY KEY, value TEXT, updated_at DATETIME)")
+        cursor.execute("SELECT value FROM system_configs WHERE key = ?", (key,))
+        row = cursor.fetchone()
+        return row[0] if row else None
+    except Exception as e:
+        print(f"[db_error] get_config {key}: {e}")
+        return None
+    finally:
+        conn.close()
+
+def set_config(key: str, value: str):
+    conn = get_connection()
+    try:
+        from datetime import datetime
+        cursor = conn.cursor()
+        cursor.execute("CREATE TABLE IF NOT EXISTS system_configs (key TEXT PRIMARY KEY, value TEXT, updated_at DATETIME)")
+        cursor.execute("""
+            INSERT INTO system_configs (key, value, updated_at) 
+            VALUES (?, ?, ?)
+            ON CONFLICT(key) DO UPDATE SET 
+                value = excluded.value, 
+                updated_at = excluded.updated_at
+        """, (key, value, datetime.now()))
+        conn.commit()
+    except Exception as e:
+        print(f"[db_error] set_config {key}: {e}")
+    finally:
+        conn.close()
 
 if __name__ == "__main__":
     init_db()

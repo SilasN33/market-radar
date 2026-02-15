@@ -17,7 +17,9 @@ from .database import (
     create_project,
     # V2
     add_term_history_snapshot,
-    get_term_history
+    get_term_history,
+    get_config,
+    set_config
 )
 
 # IMPORTANT: Auto-apply patches (Postgres for production)

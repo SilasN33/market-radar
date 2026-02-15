@@ -1,7 +1,4 @@
 """
-This module is DEPRECATED and has been replaced by src.services.mercadolivre_service.
-Please use the new service for Mercado Livre scraping.
+This module has been removed as part of the migration to the official Mercado Livre API.
+Please see src.services.mercadolivre_service for the new implementation.
 """
-import sys
-print("❌ This module is deprecated. Use src.services.mercadolivre_service instead.")
-sys.exit(1)
