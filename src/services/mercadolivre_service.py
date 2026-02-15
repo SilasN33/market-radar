@@ -28,115 +28,56 @@ class MercadoLivreService:
     """Service to interact with Mercado Livre using the Official API."""
     
     API_URL = "https://api.mercadolibre.com"
-    AUTH_URL = "https://api.mercadolibre.com/oauth/token"
 
     def __init__(self):
-        self.access_token = None
-        
-        # Load Client ID and Secret (Static)
-        self.client_id = os.getenv("ML_CLIENT_ID")
-        self.client_secret = os.getenv("ML_CLIENT_SECRET")
-        
-        # 1. Try to get Refresh Token from DB (Persistent)
-        try:
-            self.refresh_token = get_config("ML_REFRESH_TOKEN")
-        except:
-            self.refresh_token = None
-            
-        # 2. Fallback: Get from ENV (First run / Bootstrap)
-        if not self.refresh_token:
-            self.refresh_token = os.getenv("ML_REFRESH_TOKEN")
-        
-        # Fallback to local .env if env vars are missing
-        if not all([self.client_id, self.client_secret, self.refresh_token]):
-            self._load_env_fallback()
-            if not self.client_id: self.client_id = os.getenv("ML_CLIENT_ID")
-            if not self.client_secret: self.client_secret = os.getenv("ML_CLIENT_SECRET")
-            # Recheck DB/Env for refresh token after loading .env
-            if not self.refresh_token:
-                self.refresh_token = os.getenv("ML_REFRESH_TOKEN")
-            
-        if not all([self.client_id, self.client_secret, self.refresh_token]):
-            logger.warning("⚠️ Credentials missing! Please set ML_CLIENT_ID, ML_CLIENT_SECRET, and ML_REFRESH_TOKEN.")
-            # We don't raise immediately to allow import, but methods will fail.
+        # We don't need auth for public search/trends to avoid 403
+        pass
 
-    def _load_env_fallback(self):
-        """Load .env file manually without external dependencies."""
-        env_path = Path(__file__).resolve().parents[2] / ".env"
-        if env_path.exists():
-            logger.info("Loading credentials from local .env file...")
+    def get_trends(self, category_id: str = "MLB1051", limit: int = 10) -> List[str]:
+        """
+        Fetch current market trends (Most searched terms) from Mercado Livre API.
+        Default Category: MLB1051 (Celulares e Telefones), or use 'MLB' for generic.
+        NOTE: 'MLB' generic trends endpoint is deprecated or restricted, so we rotate sensible categories.
+        """
+        # List of hot categories to rotate: Electronics, Beauty, Home, Tools
+        categories = ["MLB1051", "MLB1000", "MLB1574", "MLB1648", "MLB5672"] 
+        all_trends = []
+        
+        import random
+        selected_cats = random.sample(categories, 2) # Pick 2 random categories each run
+        
+        logger.info(f"📈 Fetching Real-Time Trends from Categories: {selected_cats}")
+
+        for cat in selected_cats:
+            url = f"{self.API_URL}/sites/MLB/trends/search?category={cat}"
             try:
-                with open(env_path, "r", encoding="utf-8") as f:
-                    for line in f:
-                        line = line.strip()
-                        if not line or line.startswith("#"): continue
-                        if "=" in line:
-                            key, value = line.split("=", 1)
-                            key = key.strip()
-                            value = value.strip().strip("'").strip('"')
-                            if key and not os.getenv(key):
-                                os.environ[key] = value
+                # Public API call - No Auth Header needed
+                response = requests.get(url, timeout=10)
+                if response.status_code == 200:
+                    trends = [t.get("keyword") for t in response.json() if t.get("keyword")]
+                    all_trends.extend(trends[:limit])
+                else:
+                    logger.warning(f"Failed to fetch trends for {cat}: {response.status_code}")
             except Exception as e:
-                logger.error(f"Failed to load .env file: {e}")
-
-    def authenticate(self):
-        """Exchange refresh_token for a new access_token."""
-        if not all([self.client_id, self.client_secret, self.refresh_token]):
-            raise ValueError("Cannot authenticate: Missing credentials.")
-
-        logger.info("🔄 Refreshing Access Token...")
-        payload = {
-            "grant_type": "refresh_token",
-            "client_id": self.client_id,
-            "client_secret": self.client_secret,
-            "refresh_token": self.refresh_token
-        }
+                logger.error(f"Error fetching trends: {e}")
         
-        try:
-            response = requests.post(self.AUTH_URL, data=payload, timeout=10)
-            response.raise_for_status()
-            data = response.json()
-            
-            self.access_token = data["access_token"]
-            
-            # Handle Token Rotation
-            new_refresh = data.get("refresh_token")
-            if new_refresh:
-                self.refresh_token = new_refresh
-                # Persist to DB for next run
-                try:
-                    set_config("ML_REFRESH_TOKEN", new_refresh)
-                    logger.info("💾 New Refresh Token saved to DB.")
-                except Exception as db_err:
-                    logger.error(f"Failed to persist token: {db_err}")
-            
-            logger.info("✅ Authentication successful (Token Refreshed)")
-            
-        except requests.exceptions.RequestException as e:
-            logger.error(f"❌ Authentication failed: {e}")
-            if e.response is not None:
-                logger.error(f"Response: {e.response.text}")
-            raise
+        # Deduplicate
+        return list(set(all_trends))
+
 
     def search_products(self, keyword_obj: Dict, limit: int = 50) -> List[Dict[str, Any]]:
-        """Search products using the API."""
+        """Search products using the PUBLIC API (Anonymous to avoid 403)."""
         term = keyword_obj.get("term", "")
         if not term: return []
         
-        if not self.access_token:
-            self.authenticate()
-
         logger.info(f"🔎 API Search: '{term}'")
         
         url = f"{self.API_URL}/sites/MLB/search"
-        headers = {
-            "Authorization": f"Bearer {self.access_token}"
-        }
         
+        # NO AUTH HEADERS for public search to avoid 403 Forbidden on standard tokens
         params = {
             "q": term,
             "limit": limit,
-            # We can add explicit filters if needed
         }
         
         # Apply Price Filters
@@ -151,7 +92,12 @@ class MercadoLivreService:
              params["price_range"] = f"*-{p_max}"
 
         try:
-            response = requests.get(url, headers=headers, params=params, timeout=15)
+            response = requests.get(url, params=params, timeout=15)
+            
+            if response.status_code == 403:
+                logger.error(f"❌ 403 Forbidden. The API blocked the request. Try reducing rate.")
+                return []
+                
             response.raise_for_status()
             data = response.json()
             
@@ -161,7 +107,7 @@ class MercadoLivreService:
             negatives = keyword_obj.get("negatives", [])
             
             for item in results:
-                adapted = self._adapt_product(item, negatives)
+                adapted = self._adapt_product(item, negatives, term)
                 if adapted:
                     processed_results.append(adapted)
             
@@ -171,7 +117,7 @@ class MercadoLivreService:
             logger.error(f"❌ Search Error for '{term}': {e}")
             return []
 
-    def _adapt_product(self, item: Dict, negatives: List[str]) -> Optional[Dict]:
+    def _adapt_product(self, item: Dict, negatives: List[str], search_term: str) -> Optional[Dict]:
         """Convert API response to project dictionary format."""
         try:
             title = item.get("title")
@@ -191,17 +137,16 @@ class MercadoLivreService:
             free_shipping = shipping.get("free_shipping", False)
             
             seller = item.get("seller", {})
-            seller_name = seller.get("nickname", "Mercado Livre Seller") # Default if nickname missing
+            seller_name = seller.get("nickname", "Mercado Livre Seller")
             
-            # API doesn't always perform well with reviews in search endpoint
-            # We default to 0 to avoid N+1 calls
+            # Reviews (API doesn't return full reviews in search, we use dummy or scrape details if needed)
             rating = 0.0 
             reviews_count = 0
             
             return {
                 "timestamp": datetime.now(timezone.utc).isoformat(),
                 "source": "mercadolivre_api",
-                "search_keyword": item.get("domain_id", "unknown"), # Can also use the search term
+                "search_keyword": search_term, 
                 "marketplace": "Mercado Livre",
                 "title": title,
                 "price": float(price),
@@ -217,32 +162,23 @@ class MercadoLivreService:
 
 
 def fetch_products(max_keywords: int = 15, products_per_keyword: int = 6, output: Optional[Path] = None):
-    """Main entrypoint for fetching products."""
+    """Main entrypoint: Auto-discover Trends -> Fetch Products."""
     
-    # Load keywords
-    keywords, source = load_keywords(
-        preferred_sources=("intent_clusters", "mercadolivre_trends"),
-        return_rich_objects=True
-    )
-    
-    if not keywords:
-        logger.warning("No keywords found.")
-        return []
-        
-    target_keywords = []
-    if isinstance(keywords[0], str):
-        target_keywords = [{"term": k} for k in keywords[:max_keywords]]
-    else:
-        target_keywords = keywords[:max_keywords]
-
     service = MercadoLivreService()
     
-    try:
-        service.authenticate()
-    except Exception as e:
-        logger.error(f"CRITICAL: Authentication failed. Aborting. {e}")
-        return []
+    # 1. AUTONOMOUS DISCOVERY: Get Real Trends from API
+    logger.info("🚀 Starting Trend Discovery (API)...")
+    trends = service.get_trends(limit=max_keywords)
+    
+    if not trends:
+        logger.warning("⚠️ No trends found from API. Falling back to internal list.")
+        trends = ["Smartwatch", "Fones Bluetooth", "Projetor", "Câmera de Segurança"]
+    else:
+        logger.info(f"🔥 Hot Trends Discovered: {trends[:5]}...")
 
+    # Convert to keyword objects
+    target_keywords = [{"term": t} for t in trends]
+    
     all_products = []
     
     for idx, kw_obj in enumerate(target_keywords, 1):
@@ -257,13 +193,11 @@ def fetch_products(max_keywords: int = 15, products_per_keyword: int = 6, output
             
             # Upsert to DB
             for p in products:
-                # Inject correct keyword since _adapt_product doesn't have it easily
-                p["search_keyword"] = term 
                 upsert_product(p, term)
         else:
             print(f"❌ 0")
             
-        time.sleep(0.5) # Gentle rate limit
+        time.sleep(1.0) # Respect Public API Rate Limits
 
     # Save results
     if output is None:
